@@ -1,0 +1,62 @@
+[1.774s] Invoking command in '/home/nio/Documents/ROS2_learning_ws/src/ros2_21_tutorials/learning_gazebo': CONDA_PROMPT_MODIFIER=(ROS2) PYTHONPATH=/home/nio/Documents/ROS2_learning_ws/build/learning_gazebo/prefix_override:/home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/learning_gazebo build --build-base /home/nio/Documents/ROS2_learning_ws/build/learning_gazebo/build install --record /home/nio/Documents/ROS2_learning_ws/build/learning_gazebo/install.log --single-version-externally-managed
+[1.953s] running egg_info
+[1.954s] creating ../../../build/learning_gazebo/learning_gazebo.egg-info
+[1.954s] writing ../../../build/learning_gazebo/learning_gazebo.egg-info/PKG-INFO
+[1.954s] writing dependency_links to ../../../build/learning_gazebo/learning_gazebo.egg-info/dependency_links.txt
+[1.954s] writing entry points to ../../../build/learning_gazebo/learning_gazebo.egg-info/entry_points.txt
+[1.954s] writing requirements to ../../../build/learning_gazebo/learning_gazebo.egg-info/requires.txt
+[1.954s] writing top-level names to ../../../build/learning_gazebo/learning_gazebo.egg-info/top_level.txt
+[1.955s] writing manifest file '../../../build/learning_gazebo/learning_gazebo.egg-info/SOURCES.txt'
+[1.981s] reading manifest file '../../../build/learning_gazebo/learning_gazebo.egg-info/SOURCES.txt'
+[1.981s] writing manifest file '../../../build/learning_gazebo/learning_gazebo.egg-info/SOURCES.txt'
+[1.982s] running build
+[1.982s] running build_py
+[1.982s] creating /home/nio/Documents/ROS2_learning_ws/build/learning_gazebo/build
+[1.982s] creating /home/nio/Documents/ROS2_learning_ws/build/learning_gazebo/build/lib
+[1.984s] creating /home/nio/Documents/ROS2_learning_ws/build/learning_gazebo/build/lib/learning_gazebo
+[1.985s] copying learning_gazebo/__init__.py -> /home/nio/Documents/ROS2_learning_ws/build/learning_gazebo/build/lib/learning_gazebo
+[1.985s] running install
+[1.985s] running install_lib
+[1.987s] creating /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/lib/python3.8/site-packages/learning_gazebo
+[1.987s] copying /home/nio/Documents/ROS2_learning_ws/build/learning_gazebo/build/lib/learning_gazebo/__init__.py -> /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/lib/python3.8/site-packages/learning_gazebo
+[1.987s] byte-compiling /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/lib/python3.8/site-packages/learning_gazebo/__init__.py to __init__.cpython-38.pyc
+[1.987s] running install_data
+[1.989s] creating /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/ament_index
+[1.989s] creating /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/ament_index/resource_index
+[1.989s] creating /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/ament_index/resource_index/packages
+[1.989s] copying resource/learning_gazebo -> /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/ament_index/resource_index/packages
+[1.989s] copying package.xml -> /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/learning_gazebo
+[1.989s] creating /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/learning_gazebo/launch
+[1.989s] copying launch/load_mbot_camera_into_gazebo.launch.py -> /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/learning_gazebo/launch
+[1.989s] copying launch/load_mbot_laser_into_gazebo.launch.py -> /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/learning_gazebo/launch
+[1.989s] copying launch/mbot_camera.launch.py -> /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/learning_gazebo/launch
+[1.989s] copying launch/mbot.launch.py -> /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/learning_gazebo/launch
+[1.990s] copying launch/mbot_laser.launch.py -> /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/learning_gazebo/launch
+[1.990s] copying launch/load_mbot_rgbd_into_gazebo.launch.py -> /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/learning_gazebo/launch
+[1.990s] copying launch/mbot_rgbd.launch.py -> /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/learning_gazebo/launch
+[1.990s] copying launch/load_urdf_into_gazebo.launch.py -> /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/learning_gazebo/launch
+[1.990s] creating /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/learning_gazebo/urdf
+[1.990s] copying urdf/mbot_with_laser_gazebo.xacro -> /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/learning_gazebo/urdf
+[1.990s] copying urdf/mbot_with_camera_gazebo.xacro -> /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/learning_gazebo/urdf
+[1.990s] copying urdf/mbot_with_kinect_gazebo.xacro -> /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/learning_gazebo/urdf
+[1.990s] copying urdf/mbot_base_gazebo.xacro -> /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/learning_gazebo/urdf
+[1.990s] copying urdf/mbot_gazebo.xacro -> /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/learning_gazebo/urdf
+[1.990s] copying urdf/two_wheeled_robot_nav2.urdf -> /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/learning_gazebo/urdf
+[1.991s] creating /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/learning_gazebo/meshes
+[1.991s] copying meshes/kinect.jpg -> /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/learning_gazebo/meshes
+[1.991s] copying meshes/kinect.dae -> /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/learning_gazebo/meshes
+[1.991s] copying meshes/kinect.tga -> /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/learning_gazebo/meshes
+[1.991s] creating /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/learning_gazebo/urdf/sensors
+[1.991s] copying urdf/sensors/kinect_gazebo.xacro -> /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/learning_gazebo/urdf/sensors
+[1.991s] copying urdf/sensors/lidar_gazebo.xacro -> /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/learning_gazebo/urdf/sensors
+[1.991s] copying urdf/sensors/camera_gazebo.xacro -> /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/learning_gazebo/urdf/sensors
+[1.991s] creating /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/learning_gazebo/worlds
+[1.991s] copying worlds/neighborhood.world -> /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/learning_gazebo/worlds
+[1.991s] copying worlds/empty_world.model -> /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/learning_gazebo/worlds
+[1.992s] creating /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/learning_gazebo/rviz
+[1.992s] copying rviz/urdf_gazebo_config.rviz -> /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/share/learning_gazebo/rviz
+[1.992s] running install_egg_info
+[1.992s] Copying ../../../build/learning_gazebo/learning_gazebo.egg-info to /home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/lib/python3.8/site-packages/learning_gazebo-0.0.0-py3.8.egg-info
+[1.993s] running install_scripts
+[2.006s] writing list of installed files to '/home/nio/Documents/ROS2_learning_ws/build/learning_gazebo/install.log'
+[2.048s] Invoked command in '/home/nio/Documents/ROS2_learning_ws/src/ros2_21_tutorials/learning_gazebo' returned '0': CONDA_PROMPT_MODIFIER=(ROS2) PYTHONPATH=/home/nio/Documents/ROS2_learning_ws/build/learning_gazebo/prefix_override:/home/nio/Documents/ROS2_learning_ws/install/learning_gazebo/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/learning_gazebo build --build-base /home/nio/Documents/ROS2_learning_ws/build/learning_gazebo/build install --record /home/nio/Documents/ROS2_learning_ws/build/learning_gazebo/install.log --single-version-externally-managed

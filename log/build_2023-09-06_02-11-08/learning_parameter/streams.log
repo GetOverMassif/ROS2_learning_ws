@@ -1,0 +1,41 @@
+[1.943s] Invoking command in '/home/nio/Documents/ROS2_learning_ws/src/ros2_21_tutorials/learning_parameter': CONDA_PROMPT_MODIFIER=(ROS2) PYTHONPATH=/home/nio/Documents/ROS2_learning_ws/build/learning_parameter/prefix_override:/home/nio/Documents/ROS2_learning_ws/install/learning_parameter/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/learning_parameter build --build-base /home/nio/Documents/ROS2_learning_ws/build/learning_parameter/build install --record /home/nio/Documents/ROS2_learning_ws/build/learning_parameter/install.log --single-version-externally-managed
+[2.186s] running egg_info
+[2.186s] creating ../../../build/learning_parameter/learning_parameter.egg-info
+[2.186s] writing ../../../build/learning_parameter/learning_parameter.egg-info/PKG-INFO
+[2.186s] writing dependency_links to ../../../build/learning_parameter/learning_parameter.egg-info/dependency_links.txt
+[2.186s] writing entry points to ../../../build/learning_parameter/learning_parameter.egg-info/entry_points.txt
+[2.186s] writing requirements to ../../../build/learning_parameter/learning_parameter.egg-info/requires.txt
+[2.186s] writing top-level names to ../../../build/learning_parameter/learning_parameter.egg-info/top_level.txt
+[2.186s] writing manifest file '../../../build/learning_parameter/learning_parameter.egg-info/SOURCES.txt'
+[2.209s] reading manifest file '../../../build/learning_parameter/learning_parameter.egg-info/SOURCES.txt'
+[2.209s] writing manifest file '../../../build/learning_parameter/learning_parameter.egg-info/SOURCES.txt'
+[2.210s] running build
+[2.210s] running build_py
+[2.210s] creating /home/nio/Documents/ROS2_learning_ws/build/learning_parameter/build
+[2.210s] creating /home/nio/Documents/ROS2_learning_ws/build/learning_parameter/build/lib
+[2.210s] creating /home/nio/Documents/ROS2_learning_ws/build/learning_parameter/build/lib/learning_parameter
+[2.210s] copying learning_parameter/param_object_detect.py -> /home/nio/Documents/ROS2_learning_ws/build/learning_parameter/build/lib/learning_parameter
+[2.210s] copying learning_parameter/__init__.py -> /home/nio/Documents/ROS2_learning_ws/build/learning_parameter/build/lib/learning_parameter
+[2.210s] copying learning_parameter/param_declare.py -> /home/nio/Documents/ROS2_learning_ws/build/learning_parameter/build/lib/learning_parameter
+[2.210s] running install
+[2.211s] running install_lib
+[2.211s] creating /home/nio/Documents/ROS2_learning_ws/install/learning_parameter/lib/python3.8/site-packages/learning_parameter
+[2.212s] copying /home/nio/Documents/ROS2_learning_ws/build/learning_parameter/build/lib/learning_parameter/param_object_detect.py -> /home/nio/Documents/ROS2_learning_ws/install/learning_parameter/lib/python3.8/site-packages/learning_parameter
+[2.212s] copying /home/nio/Documents/ROS2_learning_ws/build/learning_parameter/build/lib/learning_parameter/__init__.py -> /home/nio/Documents/ROS2_learning_ws/install/learning_parameter/lib/python3.8/site-packages/learning_parameter
+[2.212s] copying /home/nio/Documents/ROS2_learning_ws/build/learning_parameter/build/lib/learning_parameter/param_declare.py -> /home/nio/Documents/ROS2_learning_ws/install/learning_parameter/lib/python3.8/site-packages/learning_parameter
+[2.212s] byte-compiling /home/nio/Documents/ROS2_learning_ws/install/learning_parameter/lib/python3.8/site-packages/learning_parameter/param_object_detect.py to param_object_detect.cpython-38.pyc
+[2.213s] byte-compiling /home/nio/Documents/ROS2_learning_ws/install/learning_parameter/lib/python3.8/site-packages/learning_parameter/__init__.py to __init__.cpython-38.pyc
+[2.213s] byte-compiling /home/nio/Documents/ROS2_learning_ws/install/learning_parameter/lib/python3.8/site-packages/learning_parameter/param_declare.py to param_declare.cpython-38.pyc
+[2.213s] running install_data
+[2.214s] creating /home/nio/Documents/ROS2_learning_ws/install/learning_parameter/share/ament_index
+[2.214s] creating /home/nio/Documents/ROS2_learning_ws/install/learning_parameter/share/ament_index/resource_index
+[2.214s] creating /home/nio/Documents/ROS2_learning_ws/install/learning_parameter/share/ament_index/resource_index/packages
+[2.214s] copying resource/learning_parameter -> /home/nio/Documents/ROS2_learning_ws/install/learning_parameter/share/ament_index/resource_index/packages
+[2.214s] copying package.xml -> /home/nio/Documents/ROS2_learning_ws/install/learning_parameter/share/learning_parameter
+[2.214s] running install_egg_info
+[2.215s] Copying ../../../build/learning_parameter/learning_parameter.egg-info to /home/nio/Documents/ROS2_learning_ws/install/learning_parameter/lib/python3.8/site-packages/learning_parameter-0.0.0-py3.8.egg-info
+[2.216s] running install_scripts
+[2.229s] Installing param_declare script to /home/nio/Documents/ROS2_learning_ws/install/learning_parameter/lib/learning_parameter
+[2.229s] Installing param_object_detect script to /home/nio/Documents/ROS2_learning_ws/install/learning_parameter/lib/learning_parameter
+[2.229s] writing list of installed files to '/home/nio/Documents/ROS2_learning_ws/build/learning_parameter/install.log'
+[2.250s] Invoked command in '/home/nio/Documents/ROS2_learning_ws/src/ros2_21_tutorials/learning_parameter' returned '0': CONDA_PROMPT_MODIFIER=(ROS2) PYTHONPATH=/home/nio/Documents/ROS2_learning_ws/build/learning_parameter/prefix_override:/home/nio/Documents/ROS2_learning_ws/install/learning_parameter/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/learning_parameter build --build-base /home/nio/Documents/ROS2_learning_ws/build/learning_parameter/build install --record /home/nio/Documents/ROS2_learning_ws/build/learning_parameter/install.log --single-version-externally-managed
