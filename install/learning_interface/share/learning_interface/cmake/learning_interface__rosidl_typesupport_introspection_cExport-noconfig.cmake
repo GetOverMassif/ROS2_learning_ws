@@ -12,8 +12,8 @@ set_target_properties(learning_interface::learning_interface__rosidl_typesupport
   IMPORTED_SONAME_NOCONFIG "liblearning_interface__rosidl_typesupport_introspection_c.so"
   )
 
-list(APPEND _IMPORT_CHECK_TARGETS learning_interface::learning_interface__rosidl_typesupport_introspection_c )
-list(APPEND _IMPORT_CHECK_FILES_FOR_learning_interface::learning_interface__rosidl_typesupport_introspection_c "${_IMPORT_PREFIX}/lib/liblearning_interface__rosidl_typesupport_introspection_c.so" )
+list(APPEND _cmake_import_check_targets learning_interface::learning_interface__rosidl_typesupport_introspection_c )
+list(APPEND _cmake_import_check_files_for_learning_interface::learning_interface__rosidl_typesupport_introspection_c "${_IMPORT_PREFIX}/lib/liblearning_interface__rosidl_typesupport_introspection_c.so" )
 
 # Commands beyond this point should not need to know the version.
 set(CMAKE_IMPORT_FILE_VERSION)

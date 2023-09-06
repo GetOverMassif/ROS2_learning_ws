@@ -23,7 +23,6 @@ size_t get_serialized_size_learning_interface__srv__GetObjectPosition_Request(
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_learning_interface
 size_t max_serialized_size_learning_interface__srv__GetObjectPosition_Request(
   bool & full_bounded,
-  bool & is_plain,
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_learning_interface
@@ -56,7 +55,6 @@ size_t get_serialized_size_learning_interface__srv__GetObjectPosition_Response(
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_learning_interface
 size_t max_serialized_size_learning_interface__srv__GetObjectPosition_Response(
   bool & full_bounded,
-  bool & is_plain,
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_learning_interface

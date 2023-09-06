@@ -17,7 +17,7 @@ extern "C"
 {
 #endif
 
-void learning_interface__srv__GetObjectPosition_Request__rosidl_typesupport_introspection_c__GetObjectPosition_Request_init_function(
+void GetObjectPosition_Request__rosidl_typesupport_introspection_c__GetObjectPosition_Request_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -26,12 +26,12 @@ void learning_interface__srv__GetObjectPosition_Request__rosidl_typesupport_intr
   learning_interface__srv__GetObjectPosition_Request__init(message_memory);
 }
 
-void learning_interface__srv__GetObjectPosition_Request__rosidl_typesupport_introspection_c__GetObjectPosition_Request_fini_function(void * message_memory)
+void GetObjectPosition_Request__rosidl_typesupport_introspection_c__GetObjectPosition_Request_fini_function(void * message_memory)
 {
   learning_interface__srv__GetObjectPosition_Request__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember learning_interface__srv__GetObjectPosition_Request__rosidl_typesupport_introspection_c__GetObjectPosition_Request_message_member_array[1] = {
+static rosidl_typesupport_introspection_c__MessageMember GetObjectPosition_Request__rosidl_typesupport_introspection_c__GetObjectPosition_Request_message_member_array[1] = {
   {
     "get",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
@@ -49,32 +49,32 @@ static rosidl_typesupport_introspection_c__MessageMember learning_interface__srv
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers learning_interface__srv__GetObjectPosition_Request__rosidl_typesupport_introspection_c__GetObjectPosition_Request_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers GetObjectPosition_Request__rosidl_typesupport_introspection_c__GetObjectPosition_Request_message_members = {
   "learning_interface__srv",  // message namespace
   "GetObjectPosition_Request",  // message name
   1,  // number of fields
   sizeof(learning_interface__srv__GetObjectPosition_Request),
-  learning_interface__srv__GetObjectPosition_Request__rosidl_typesupport_introspection_c__GetObjectPosition_Request_message_member_array,  // message members
-  learning_interface__srv__GetObjectPosition_Request__rosidl_typesupport_introspection_c__GetObjectPosition_Request_init_function,  // function to initialize message memory (memory has to be allocated)
-  learning_interface__srv__GetObjectPosition_Request__rosidl_typesupport_introspection_c__GetObjectPosition_Request_fini_function  // function to terminate message instance (will not free memory)
+  GetObjectPosition_Request__rosidl_typesupport_introspection_c__GetObjectPosition_Request_message_member_array,  // message members
+  GetObjectPosition_Request__rosidl_typesupport_introspection_c__GetObjectPosition_Request_init_function,  // function to initialize message memory (memory has to be allocated)
+  GetObjectPosition_Request__rosidl_typesupport_introspection_c__GetObjectPosition_Request_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t learning_interface__srv__GetObjectPosition_Request__rosidl_typesupport_introspection_c__GetObjectPosition_Request_message_type_support_handle = {
+static rosidl_message_type_support_t GetObjectPosition_Request__rosidl_typesupport_introspection_c__GetObjectPosition_Request_message_type_support_handle = {
   0,
-  &learning_interface__srv__GetObjectPosition_Request__rosidl_typesupport_introspection_c__GetObjectPosition_Request_message_members,
+  &GetObjectPosition_Request__rosidl_typesupport_introspection_c__GetObjectPosition_Request_message_members,
   get_message_typesupport_handle_function,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_learning_interface
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, learning_interface, srv, GetObjectPosition_Request)() {
-  if (!learning_interface__srv__GetObjectPosition_Request__rosidl_typesupport_introspection_c__GetObjectPosition_Request_message_type_support_handle.typesupport_identifier) {
-    learning_interface__srv__GetObjectPosition_Request__rosidl_typesupport_introspection_c__GetObjectPosition_Request_message_type_support_handle.typesupport_identifier =
+  if (!GetObjectPosition_Request__rosidl_typesupport_introspection_c__GetObjectPosition_Request_message_type_support_handle.typesupport_identifier) {
+    GetObjectPosition_Request__rosidl_typesupport_introspection_c__GetObjectPosition_Request_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &learning_interface__srv__GetObjectPosition_Request__rosidl_typesupport_introspection_c__GetObjectPosition_Request_message_type_support_handle;
+  return &GetObjectPosition_Request__rosidl_typesupport_introspection_c__GetObjectPosition_Request_message_type_support_handle;
 }
 #ifdef __cplusplus
 }
@@ -103,7 +103,7 @@ extern "C"
 {
 #endif
 
-void learning_interface__srv__GetObjectPosition_Response__rosidl_typesupport_introspection_c__GetObjectPosition_Response_init_function(
+void GetObjectPosition_Response__rosidl_typesupport_introspection_c__GetObjectPosition_Response_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -112,12 +112,12 @@ void learning_interface__srv__GetObjectPosition_Response__rosidl_typesupport_int
   learning_interface__srv__GetObjectPosition_Response__init(message_memory);
 }
 
-void learning_interface__srv__GetObjectPosition_Response__rosidl_typesupport_introspection_c__GetObjectPosition_Response_fini_function(void * message_memory)
+void GetObjectPosition_Response__rosidl_typesupport_introspection_c__GetObjectPosition_Response_fini_function(void * message_memory)
 {
   learning_interface__srv__GetObjectPosition_Response__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember learning_interface__srv__GetObjectPosition_Response__rosidl_typesupport_introspection_c__GetObjectPosition_Response_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember GetObjectPosition_Response__rosidl_typesupport_introspection_c__GetObjectPosition_Response_message_member_array[2] = {
   {
     "x",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
@@ -150,32 +150,32 @@ static rosidl_typesupport_introspection_c__MessageMember learning_interface__srv
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers learning_interface__srv__GetObjectPosition_Response__rosidl_typesupport_introspection_c__GetObjectPosition_Response_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers GetObjectPosition_Response__rosidl_typesupport_introspection_c__GetObjectPosition_Response_message_members = {
   "learning_interface__srv",  // message namespace
   "GetObjectPosition_Response",  // message name
   2,  // number of fields
   sizeof(learning_interface__srv__GetObjectPosition_Response),
-  learning_interface__srv__GetObjectPosition_Response__rosidl_typesupport_introspection_c__GetObjectPosition_Response_message_member_array,  // message members
-  learning_interface__srv__GetObjectPosition_Response__rosidl_typesupport_introspection_c__GetObjectPosition_Response_init_function,  // function to initialize message memory (memory has to be allocated)
-  learning_interface__srv__GetObjectPosition_Response__rosidl_typesupport_introspection_c__GetObjectPosition_Response_fini_function  // function to terminate message instance (will not free memory)
+  GetObjectPosition_Response__rosidl_typesupport_introspection_c__GetObjectPosition_Response_message_member_array,  // message members
+  GetObjectPosition_Response__rosidl_typesupport_introspection_c__GetObjectPosition_Response_init_function,  // function to initialize message memory (memory has to be allocated)
+  GetObjectPosition_Response__rosidl_typesupport_introspection_c__GetObjectPosition_Response_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t learning_interface__srv__GetObjectPosition_Response__rosidl_typesupport_introspection_c__GetObjectPosition_Response_message_type_support_handle = {
+static rosidl_message_type_support_t GetObjectPosition_Response__rosidl_typesupport_introspection_c__GetObjectPosition_Response_message_type_support_handle = {
   0,
-  &learning_interface__srv__GetObjectPosition_Response__rosidl_typesupport_introspection_c__GetObjectPosition_Response_message_members,
+  &GetObjectPosition_Response__rosidl_typesupport_introspection_c__GetObjectPosition_Response_message_members,
   get_message_typesupport_handle_function,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_learning_interface
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, learning_interface, srv, GetObjectPosition_Response)() {
-  if (!learning_interface__srv__GetObjectPosition_Response__rosidl_typesupport_introspection_c__GetObjectPosition_Response_message_type_support_handle.typesupport_identifier) {
-    learning_interface__srv__GetObjectPosition_Response__rosidl_typesupport_introspection_c__GetObjectPosition_Response_message_type_support_handle.typesupport_identifier =
+  if (!GetObjectPosition_Response__rosidl_typesupport_introspection_c__GetObjectPosition_Response_message_type_support_handle.typesupport_identifier) {
+    GetObjectPosition_Response__rosidl_typesupport_introspection_c__GetObjectPosition_Response_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &learning_interface__srv__GetObjectPosition_Response__rosidl_typesupport_introspection_c__GetObjectPosition_Response_message_type_support_handle;
+  return &GetObjectPosition_Response__rosidl_typesupport_introspection_c__GetObjectPosition_Response_message_type_support_handle;
 }
 #ifdef __cplusplus
 }

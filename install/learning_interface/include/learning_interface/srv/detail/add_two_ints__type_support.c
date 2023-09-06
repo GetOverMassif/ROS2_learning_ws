@@ -17,7 +17,7 @@ extern "C"
 {
 #endif
 
-void learning_interface__srv__AddTwoInts_Request__rosidl_typesupport_introspection_c__AddTwoInts_Request_init_function(
+void AddTwoInts_Request__rosidl_typesupport_introspection_c__AddTwoInts_Request_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -26,12 +26,12 @@ void learning_interface__srv__AddTwoInts_Request__rosidl_typesupport_introspecti
   learning_interface__srv__AddTwoInts_Request__init(message_memory);
 }
 
-void learning_interface__srv__AddTwoInts_Request__rosidl_typesupport_introspection_c__AddTwoInts_Request_fini_function(void * message_memory)
+void AddTwoInts_Request__rosidl_typesupport_introspection_c__AddTwoInts_Request_fini_function(void * message_memory)
 {
   learning_interface__srv__AddTwoInts_Request__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember learning_interface__srv__AddTwoInts_Request__rosidl_typesupport_introspection_c__AddTwoInts_Request_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember AddTwoInts_Request__rosidl_typesupport_introspection_c__AddTwoInts_Request_message_member_array[2] = {
   {
     "a",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT64,  // type
@@ -64,32 +64,32 @@ static rosidl_typesupport_introspection_c__MessageMember learning_interface__srv
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers learning_interface__srv__AddTwoInts_Request__rosidl_typesupport_introspection_c__AddTwoInts_Request_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers AddTwoInts_Request__rosidl_typesupport_introspection_c__AddTwoInts_Request_message_members = {
   "learning_interface__srv",  // message namespace
   "AddTwoInts_Request",  // message name
   2,  // number of fields
   sizeof(learning_interface__srv__AddTwoInts_Request),
-  learning_interface__srv__AddTwoInts_Request__rosidl_typesupport_introspection_c__AddTwoInts_Request_message_member_array,  // message members
-  learning_interface__srv__AddTwoInts_Request__rosidl_typesupport_introspection_c__AddTwoInts_Request_init_function,  // function to initialize message memory (memory has to be allocated)
-  learning_interface__srv__AddTwoInts_Request__rosidl_typesupport_introspection_c__AddTwoInts_Request_fini_function  // function to terminate message instance (will not free memory)
+  AddTwoInts_Request__rosidl_typesupport_introspection_c__AddTwoInts_Request_message_member_array,  // message members
+  AddTwoInts_Request__rosidl_typesupport_introspection_c__AddTwoInts_Request_init_function,  // function to initialize message memory (memory has to be allocated)
+  AddTwoInts_Request__rosidl_typesupport_introspection_c__AddTwoInts_Request_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t learning_interface__srv__AddTwoInts_Request__rosidl_typesupport_introspection_c__AddTwoInts_Request_message_type_support_handle = {
+static rosidl_message_type_support_t AddTwoInts_Request__rosidl_typesupport_introspection_c__AddTwoInts_Request_message_type_support_handle = {
   0,
-  &learning_interface__srv__AddTwoInts_Request__rosidl_typesupport_introspection_c__AddTwoInts_Request_message_members,
+  &AddTwoInts_Request__rosidl_typesupport_introspection_c__AddTwoInts_Request_message_members,
   get_message_typesupport_handle_function,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_learning_interface
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, learning_interface, srv, AddTwoInts_Request)() {
-  if (!learning_interface__srv__AddTwoInts_Request__rosidl_typesupport_introspection_c__AddTwoInts_Request_message_type_support_handle.typesupport_identifier) {
-    learning_interface__srv__AddTwoInts_Request__rosidl_typesupport_introspection_c__AddTwoInts_Request_message_type_support_handle.typesupport_identifier =
+  if (!AddTwoInts_Request__rosidl_typesupport_introspection_c__AddTwoInts_Request_message_type_support_handle.typesupport_identifier) {
+    AddTwoInts_Request__rosidl_typesupport_introspection_c__AddTwoInts_Request_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &learning_interface__srv__AddTwoInts_Request__rosidl_typesupport_introspection_c__AddTwoInts_Request_message_type_support_handle;
+  return &AddTwoInts_Request__rosidl_typesupport_introspection_c__AddTwoInts_Request_message_type_support_handle;
 }
 #ifdef __cplusplus
 }
@@ -118,7 +118,7 @@ extern "C"
 {
 #endif
 
-void learning_interface__srv__AddTwoInts_Response__rosidl_typesupport_introspection_c__AddTwoInts_Response_init_function(
+void AddTwoInts_Response__rosidl_typesupport_introspection_c__AddTwoInts_Response_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -127,12 +127,12 @@ void learning_interface__srv__AddTwoInts_Response__rosidl_typesupport_introspect
   learning_interface__srv__AddTwoInts_Response__init(message_memory);
 }
 
-void learning_interface__srv__AddTwoInts_Response__rosidl_typesupport_introspection_c__AddTwoInts_Response_fini_function(void * message_memory)
+void AddTwoInts_Response__rosidl_typesupport_introspection_c__AddTwoInts_Response_fini_function(void * message_memory)
 {
   learning_interface__srv__AddTwoInts_Response__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember learning_interface__srv__AddTwoInts_Response__rosidl_typesupport_introspection_c__AddTwoInts_Response_message_member_array[1] = {
+static rosidl_typesupport_introspection_c__MessageMember AddTwoInts_Response__rosidl_typesupport_introspection_c__AddTwoInts_Response_message_member_array[1] = {
   {
     "sum",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT64,  // type
@@ -150,32 +150,32 @@ static rosidl_typesupport_introspection_c__MessageMember learning_interface__srv
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers learning_interface__srv__AddTwoInts_Response__rosidl_typesupport_introspection_c__AddTwoInts_Response_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers AddTwoInts_Response__rosidl_typesupport_introspection_c__AddTwoInts_Response_message_members = {
   "learning_interface__srv",  // message namespace
   "AddTwoInts_Response",  // message name
   1,  // number of fields
   sizeof(learning_interface__srv__AddTwoInts_Response),
-  learning_interface__srv__AddTwoInts_Response__rosidl_typesupport_introspection_c__AddTwoInts_Response_message_member_array,  // message members
-  learning_interface__srv__AddTwoInts_Response__rosidl_typesupport_introspection_c__AddTwoInts_Response_init_function,  // function to initialize message memory (memory has to be allocated)
-  learning_interface__srv__AddTwoInts_Response__rosidl_typesupport_introspection_c__AddTwoInts_Response_fini_function  // function to terminate message instance (will not free memory)
+  AddTwoInts_Response__rosidl_typesupport_introspection_c__AddTwoInts_Response_message_member_array,  // message members
+  AddTwoInts_Response__rosidl_typesupport_introspection_c__AddTwoInts_Response_init_function,  // function to initialize message memory (memory has to be allocated)
+  AddTwoInts_Response__rosidl_typesupport_introspection_c__AddTwoInts_Response_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t learning_interface__srv__AddTwoInts_Response__rosidl_typesupport_introspection_c__AddTwoInts_Response_message_type_support_handle = {
+static rosidl_message_type_support_t AddTwoInts_Response__rosidl_typesupport_introspection_c__AddTwoInts_Response_message_type_support_handle = {
   0,
-  &learning_interface__srv__AddTwoInts_Response__rosidl_typesupport_introspection_c__AddTwoInts_Response_message_members,
+  &AddTwoInts_Response__rosidl_typesupport_introspection_c__AddTwoInts_Response_message_members,
   get_message_typesupport_handle_function,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_learning_interface
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, learning_interface, srv, AddTwoInts_Response)() {
-  if (!learning_interface__srv__AddTwoInts_Response__rosidl_typesupport_introspection_c__AddTwoInts_Response_message_type_support_handle.typesupport_identifier) {
-    learning_interface__srv__AddTwoInts_Response__rosidl_typesupport_introspection_c__AddTwoInts_Response_message_type_support_handle.typesupport_identifier =
+  if (!AddTwoInts_Response__rosidl_typesupport_introspection_c__AddTwoInts_Response_message_type_support_handle.typesupport_identifier) {
+    AddTwoInts_Response__rosidl_typesupport_introspection_c__AddTwoInts_Response_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &learning_interface__srv__AddTwoInts_Response__rosidl_typesupport_introspection_c__AddTwoInts_Response_message_type_support_handle;
+  return &AddTwoInts_Response__rosidl_typesupport_introspection_c__AddTwoInts_Response_message_type_support_handle;
 }
 #ifdef __cplusplus
 }

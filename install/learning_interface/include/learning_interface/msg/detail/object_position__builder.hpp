@@ -5,11 +5,10 @@
 #ifndef LEARNING_INTERFACE__MSG__DETAIL__OBJECT_POSITION__BUILDER_HPP_
 #define LEARNING_INTERFACE__MSG__DETAIL__OBJECT_POSITION__BUILDER_HPP_
 
+#include "learning_interface/msg/detail/object_position__struct.hpp"
+#include <rosidl_runtime_cpp/message_initialization.hpp>
 #include <algorithm>
 #include <utility>
-
-#include "learning_interface/msg/detail/object_position__struct.hpp"
-#include "rosidl_runtime_cpp/message_initialization.hpp"
 
 
 namespace learning_interface

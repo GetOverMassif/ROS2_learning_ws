@@ -5,97 +5,13 @@
 #ifndef LEARNING_INTERFACE__MSG__DETAIL__OBJECT_POSITION__TRAITS_HPP_
 #define LEARNING_INTERFACE__MSG__DETAIL__OBJECT_POSITION__TRAITS_HPP_
 
-#include <stdint.h>
-
-#include <sstream>
-#include <string>
-#include <type_traits>
-
 #include "learning_interface/msg/detail/object_position__struct.hpp"
-#include "rosidl_runtime_cpp/traits.hpp"
-
-namespace learning_interface
-{
-
-namespace msg
-{
-
-inline void to_flow_style_yaml(
-  const ObjectPosition & msg,
-  std::ostream & out)
-{
-  out << "{";
-  // member: x
-  {
-    out << "x: ";
-    rosidl_generator_traits::value_to_yaml(msg.x, out);
-    out << ", ";
-  }
-
-  // member: y
-  {
-    out << "y: ";
-    rosidl_generator_traits::value_to_yaml(msg.y, out);
-  }
-  out << "}";
-}  // NOLINT(readability/fn_size)
-
-inline void to_block_style_yaml(
-  const ObjectPosition & msg,
-  std::ostream & out, size_t indentation = 0)
-{
-  // member: x
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "x: ";
-    rosidl_generator_traits::value_to_yaml(msg.x, out);
-    out << "\n";
-  }
-
-  // member: y
-  {
-    if (indentation > 0) {
-      out << std::string(indentation, ' ');
-    }
-    out << "y: ";
-    rosidl_generator_traits::value_to_yaml(msg.y, out);
-    out << "\n";
-  }
-}  // NOLINT(readability/fn_size)
-
-inline std::string to_yaml(const ObjectPosition & msg, bool use_flow_style = false)
-{
-  std::ostringstream out;
-  if (use_flow_style) {
-    to_flow_style_yaml(msg, out);
-  } else {
-    to_block_style_yaml(msg, out);
-  }
-  return out.str();
-}
-
-}  // namespace msg
-
-}  // namespace learning_interface
+#include <rosidl_runtime_cpp/traits.hpp>
+#include <stdint.h>
+#include <type_traits>
 
 namespace rosidl_generator_traits
 {
-
-[[deprecated("use learning_interface::msg::to_block_style_yaml() instead")]]
-inline void to_yaml(
-  const learning_interface::msg::ObjectPosition & msg,
-  std::ostream & out, size_t indentation = 0)
-{
-  learning_interface::msg::to_block_style_yaml(msg, out, indentation);
-}
-
-[[deprecated("use learning_interface::msg::to_yaml() instead")]]
-inline std::string to_yaml(const learning_interface::msg::ObjectPosition & msg)
-{
-  return learning_interface::msg::to_yaml(msg);
-}
 
 template<>
 inline const char * data_type<learning_interface::msg::ObjectPosition>()

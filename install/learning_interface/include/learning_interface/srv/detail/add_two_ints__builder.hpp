@@ -5,11 +5,10 @@
 #ifndef LEARNING_INTERFACE__SRV__DETAIL__ADD_TWO_INTS__BUILDER_HPP_
 #define LEARNING_INTERFACE__SRV__DETAIL__ADD_TWO_INTS__BUILDER_HPP_
 
+#include "learning_interface/srv/detail/add_two_ints__struct.hpp"
+#include <rosidl_runtime_cpp/message_initialization.hpp>
 #include <algorithm>
 #include <utility>
-
-#include "learning_interface/srv/detail/add_two_ints__struct.hpp"
-#include "rosidl_runtime_cpp/message_initialization.hpp"
 
 
 namespace learning_interface

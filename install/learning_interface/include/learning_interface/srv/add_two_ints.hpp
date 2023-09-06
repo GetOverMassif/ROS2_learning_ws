@@ -7,5 +7,6 @@
 #include "learning_interface/srv/detail/add_two_ints__struct.hpp"
 #include "learning_interface/srv/detail/add_two_ints__builder.hpp"
 #include "learning_interface/srv/detail/add_two_ints__traits.hpp"
+#include "learning_interface/srv/detail/add_two_ints__type_support.hpp"
 
 #endif  // LEARNING_INTERFACE__SRV__ADD_TWO_INTS_HPP_

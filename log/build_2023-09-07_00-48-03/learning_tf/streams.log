@@ -1,0 +1,24 @@
+[0.447s] Invoking command in '/home/nio/Documents/ROS2_learning_ws/src/ros2_21_tutorials/learning_tf': AMENT_PREFIX_PATH=/home/nio/Documents/ROS2_learning_ws/install/tf_transformations:${AMENT_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(py38) PYTHONPATH=/home/nio/Documents/ROS2_learning_ws/build/learning_tf/prefix_override:/home/nio/Documents/ROS2_learning_ws/install/learning_tf/lib/python3.8/site-packages:/home/nio/Documents/ROS2_learning_ws/install/tf_transformations/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/learning_tf build --build-base /home/nio/Documents/ROS2_learning_ws/build/learning_tf/build install --record /home/nio/Documents/ROS2_learning_ws/build/learning_tf/install.log --single-version-externally-managed
+[0.570s] running egg_info
+[0.570s] writing ../../../build/learning_tf/learning_tf.egg-info/PKG-INFO
+[0.570s] writing dependency_links to ../../../build/learning_tf/learning_tf.egg-info/dependency_links.txt
+[0.570s] writing entry points to ../../../build/learning_tf/learning_tf.egg-info/entry_points.txt
+[0.570s] writing requirements to ../../../build/learning_tf/learning_tf.egg-info/requires.txt
+[0.571s] writing top-level names to ../../../build/learning_tf/learning_tf.egg-info/top_level.txt
+[0.601s] reading manifest file '../../../build/learning_tf/learning_tf.egg-info/SOURCES.txt'
+[0.602s] writing manifest file '../../../build/learning_tf/learning_tf.egg-info/SOURCES.txt'
+[0.602s] running build
+[0.602s] running build_py
+[0.602s] running install
+[0.603s] running install_lib
+[0.604s] running install_data
+[0.604s] running install_egg_info
+[0.605s] removing '/home/nio/Documents/ROS2_learning_ws/install/learning_tf/lib/python3.8/site-packages/learning_tf-0.0.0-py3.8.egg-info' (and everything under it)
+[0.605s] Copying ../../../build/learning_tf/learning_tf.egg-info to /home/nio/Documents/ROS2_learning_ws/install/learning_tf/lib/python3.8/site-packages/learning_tf-0.0.0-py3.8.egg-info
+[0.606s] running install_scripts
+[0.616s] Installing static_tf_broadcaster script to /home/nio/Documents/ROS2_learning_ws/install/learning_tf/lib/learning_tf
+[0.616s] Installing tf_listener script to /home/nio/Documents/ROS2_learning_ws/install/learning_tf/lib/learning_tf
+[0.616s] Installing turtle_following script to /home/nio/Documents/ROS2_learning_ws/install/learning_tf/lib/learning_tf
+[0.616s] Installing turtle_tf_broadcaster script to /home/nio/Documents/ROS2_learning_ws/install/learning_tf/lib/learning_tf
+[0.616s] writing list of installed files to '/home/nio/Documents/ROS2_learning_ws/build/learning_tf/install.log'
+[0.628s] Invoked command in '/home/nio/Documents/ROS2_learning_ws/src/ros2_21_tutorials/learning_tf' returned '0': AMENT_PREFIX_PATH=/home/nio/Documents/ROS2_learning_ws/install/tf_transformations:${AMENT_PREFIX_PATH} CONDA_PROMPT_MODIFIER=(py38) PYTHONPATH=/home/nio/Documents/ROS2_learning_ws/build/learning_tf/prefix_override:/home/nio/Documents/ROS2_learning_ws/install/learning_tf/lib/python3.8/site-packages:/home/nio/Documents/ROS2_learning_ws/install/tf_transformations/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/learning_tf build --build-base /home/nio/Documents/ROS2_learning_ws/build/learning_tf/build install --record /home/nio/Documents/ROS2_learning_ws/build/learning_tf/install.log --single-version-externally-managed

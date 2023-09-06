@@ -55,7 +55,6 @@ size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_learning_interface
 max_serialized_size_AddTwoInts_Request(
   bool & full_bounded,
-  bool & is_plain,
   size_t current_alignment);
 
 }  // namespace typesupport_fastrtps_cpp
@@ -132,7 +131,6 @@ size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_learning_interface
 max_serialized_size_AddTwoInts_Response(
   bool & full_bounded,
-  bool & is_plain,
   size_t current_alignment);
 
 }  // namespace typesupport_fastrtps_cpp

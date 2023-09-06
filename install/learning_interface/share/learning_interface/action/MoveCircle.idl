@@ -7,17 +7,17 @@ module learning_interface {
   module action {
     struct MoveCircle_Goal {
       @verbatim (language="comment", text=
-        "定义动作的目标，表示动作开始的指令")
+        " 定义动作的目标，表示动作开始的指令")
       boolean enable;
     };
     struct MoveCircle_Result {
       @verbatim (language="comment", text=
-        "定义动作的结果，表示是否成功执行")
+        " 定义动作的结果，表示是否成功执行")
       boolean finish;
     };
     struct MoveCircle_Feedback {
       @verbatim (language="comment", text=
-        "定义动作的反馈，表示当前执行到的位置")
+        " 定义动作的反馈，表示当前执行到的位置")
       int32 state;
     };
   };

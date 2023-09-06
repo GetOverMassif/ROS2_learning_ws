@@ -1,0 +1,20 @@
+[1.873s] Invoking command in '/home/nio/Documents/ROS2_learning_ws/src/ros2_21_tutorials/learning_launch': CONDA_PROMPT_MODIFIER=(py38) PYTHONPATH=/home/nio/Documents/ROS2_learning_ws/build/learning_launch/prefix_override:/home/nio/Documents/ROS2_learning_ws/install/learning_launch/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/learning_launch build --build-base /home/nio/Documents/ROS2_learning_ws/build/learning_launch/build install --record /home/nio/Documents/ROS2_learning_ws/build/learning_launch/install.log --single-version-externally-managed
+[2.122s] running egg_info
+[2.122s] writing ../../../build/learning_launch/learning_launch.egg-info/PKG-INFO
+[2.123s] writing dependency_links to ../../../build/learning_launch/learning_launch.egg-info/dependency_links.txt
+[2.123s] writing entry points to ../../../build/learning_launch/learning_launch.egg-info/entry_points.txt
+[2.123s] writing requirements to ../../../build/learning_launch/learning_launch.egg-info/requires.txt
+[2.123s] writing top-level names to ../../../build/learning_launch/learning_launch.egg-info/top_level.txt
+[2.150s] reading manifest file '../../../build/learning_launch/learning_launch.egg-info/SOURCES.txt'
+[2.150s] writing manifest file '../../../build/learning_launch/learning_launch.egg-info/SOURCES.txt'
+[2.150s] running build
+[2.150s] running build_py
+[2.150s] running install
+[2.151s] running install_lib
+[2.152s] running install_data
+[2.152s] running install_egg_info
+[2.154s] removing '/home/nio/Documents/ROS2_learning_ws/install/learning_launch/lib/python3.8/site-packages/learning_launch-0.0.0-py3.8.egg-info' (and everything under it)
+[2.154s] Copying ../../../build/learning_launch/learning_launch.egg-info to /home/nio/Documents/ROS2_learning_ws/install/learning_launch/lib/python3.8/site-packages/learning_launch-0.0.0-py3.8.egg-info
+[2.154s] running install_scripts
+[2.167s] writing list of installed files to '/home/nio/Documents/ROS2_learning_ws/build/learning_launch/install.log'
+[2.503s] Invoked command in '/home/nio/Documents/ROS2_learning_ws/src/ros2_21_tutorials/learning_launch' returned '0': CONDA_PROMPT_MODIFIER=(py38) PYTHONPATH=/home/nio/Documents/ROS2_learning_ws/build/learning_launch/prefix_override:/home/nio/Documents/ROS2_learning_ws/install/learning_launch/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/learning_launch build --build-base /home/nio/Documents/ROS2_learning_ws/build/learning_launch/build install --record /home/nio/Documents/ROS2_learning_ws/build/learning_launch/install.log --single-version-externally-managed

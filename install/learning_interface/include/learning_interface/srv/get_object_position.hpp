@@ -7,5 +7,6 @@
 #include "learning_interface/srv/detail/get_object_position__struct.hpp"
 #include "learning_interface/srv/detail/get_object_position__builder.hpp"
 #include "learning_interface/srv/detail/get_object_position__traits.hpp"
+#include "learning_interface/srv/detail/get_object_position__type_support.hpp"
 
 #endif  // LEARNING_INTERFACE__SRV__GET_OBJECT_POSITION_HPP_

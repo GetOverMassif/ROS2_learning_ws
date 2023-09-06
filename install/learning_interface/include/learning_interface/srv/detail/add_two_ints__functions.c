@@ -31,6 +31,38 @@ learning_interface__srv__AddTwoInts_Request__fini(learning_interface__srv__AddTw
   // b
 }
 
+bool
+learning_interface__srv__AddTwoInts_Request__are_equal(const learning_interface__srv__AddTwoInts_Request * lhs, const learning_interface__srv__AddTwoInts_Request * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  // a
+  if (lhs->a != rhs->a) {
+    return false;
+  }
+  // b
+  if (lhs->b != rhs->b) {
+    return false;
+  }
+  return true;
+}
+
+bool
+learning_interface__srv__AddTwoInts_Request__copy(
+  const learning_interface__srv__AddTwoInts_Request * input,
+  learning_interface__srv__AddTwoInts_Request * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  // a
+  output->a = input->a;
+  // b
+  output->b = input->b;
+  return true;
+}
+
 learning_interface__srv__AddTwoInts_Request *
 learning_interface__srv__AddTwoInts_Request__create()
 {
@@ -148,6 +180,63 @@ learning_interface__srv__AddTwoInts_Request__Sequence__destroy(learning_interfac
   allocator.deallocate(array, allocator.state);
 }
 
+bool
+learning_interface__srv__AddTwoInts_Request__Sequence__are_equal(const learning_interface__srv__AddTwoInts_Request__Sequence * lhs, const learning_interface__srv__AddTwoInts_Request__Sequence * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  if (lhs->size != rhs->size) {
+    return false;
+  }
+  for (size_t i = 0; i < lhs->size; ++i) {
+    if (!learning_interface__srv__AddTwoInts_Request__are_equal(&(lhs->data[i]), &(rhs->data[i]))) {
+      return false;
+    }
+  }
+  return true;
+}
+
+bool
+learning_interface__srv__AddTwoInts_Request__Sequence__copy(
+  const learning_interface__srv__AddTwoInts_Request__Sequence * input,
+  learning_interface__srv__AddTwoInts_Request__Sequence * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  if (output->capacity < input->size) {
+    const size_t allocation_size =
+      input->size * sizeof(learning_interface__srv__AddTwoInts_Request);
+    learning_interface__srv__AddTwoInts_Request * data =
+      (learning_interface__srv__AddTwoInts_Request *)realloc(output->data, allocation_size);
+    if (!data) {
+      return false;
+    }
+    for (size_t i = output->capacity; i < input->size; ++i) {
+      if (!learning_interface__srv__AddTwoInts_Request__init(&data[i])) {
+        /* free currently allocated and return false */
+        for (; i-- > output->capacity; ) {
+          learning_interface__srv__AddTwoInts_Request__fini(&data[i]);
+        }
+        free(data);
+        return false;
+      }
+    }
+    output->data = data;
+    output->capacity = input->size;
+  }
+  output->size = input->size;
+  for (size_t i = 0; i < input->size; ++i) {
+    if (!learning_interface__srv__AddTwoInts_Request__copy(
+        &(input->data[i]), &(output->data[i])))
+    {
+      return false;
+    }
+  }
+  return true;
+}
+
 
 bool
 learning_interface__srv__AddTwoInts_Response__init(learning_interface__srv__AddTwoInts_Response * msg)
@@ -166,6 +255,32 @@ learning_interface__srv__AddTwoInts_Response__fini(learning_interface__srv__AddT
     return;
   }
   // sum
+}
+
+bool
+learning_interface__srv__AddTwoInts_Response__are_equal(const learning_interface__srv__AddTwoInts_Response * lhs, const learning_interface__srv__AddTwoInts_Response * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  // sum
+  if (lhs->sum != rhs->sum) {
+    return false;
+  }
+  return true;
+}
+
+bool
+learning_interface__srv__AddTwoInts_Response__copy(
+  const learning_interface__srv__AddTwoInts_Response * input,
+  learning_interface__srv__AddTwoInts_Response * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  // sum
+  output->sum = input->sum;
+  return true;
 }
 
 learning_interface__srv__AddTwoInts_Response *
@@ -283,4 +398,61 @@ learning_interface__srv__AddTwoInts_Response__Sequence__destroy(learning_interfa
     learning_interface__srv__AddTwoInts_Response__Sequence__fini(array);
   }
   allocator.deallocate(array, allocator.state);
+}
+
+bool
+learning_interface__srv__AddTwoInts_Response__Sequence__are_equal(const learning_interface__srv__AddTwoInts_Response__Sequence * lhs, const learning_interface__srv__AddTwoInts_Response__Sequence * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  if (lhs->size != rhs->size) {
+    return false;
+  }
+  for (size_t i = 0; i < lhs->size; ++i) {
+    if (!learning_interface__srv__AddTwoInts_Response__are_equal(&(lhs->data[i]), &(rhs->data[i]))) {
+      return false;
+    }
+  }
+  return true;
+}
+
+bool
+learning_interface__srv__AddTwoInts_Response__Sequence__copy(
+  const learning_interface__srv__AddTwoInts_Response__Sequence * input,
+  learning_interface__srv__AddTwoInts_Response__Sequence * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  if (output->capacity < input->size) {
+    const size_t allocation_size =
+      input->size * sizeof(learning_interface__srv__AddTwoInts_Response);
+    learning_interface__srv__AddTwoInts_Response * data =
+      (learning_interface__srv__AddTwoInts_Response *)realloc(output->data, allocation_size);
+    if (!data) {
+      return false;
+    }
+    for (size_t i = output->capacity; i < input->size; ++i) {
+      if (!learning_interface__srv__AddTwoInts_Response__init(&data[i])) {
+        /* free currently allocated and return false */
+        for (; i-- > output->capacity; ) {
+          learning_interface__srv__AddTwoInts_Response__fini(&data[i]);
+        }
+        free(data);
+        return false;
+      }
+    }
+    output->data = data;
+    output->capacity = input->size;
+  }
+  output->size = input->size;
+  for (size_t i = 0; i < input->size; ++i) {
+    if (!learning_interface__srv__AddTwoInts_Response__copy(
+        &(input->data[i]), &(output->data[i])))
+    {
+      return false;
+    }
+  }
+  return true;
 }

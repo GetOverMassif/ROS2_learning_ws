@@ -55,7 +55,6 @@ size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_learning_interface
 max_serialized_size_MoveCircle_Goal(
   bool & full_bounded,
-  bool & is_plain,
   size_t current_alignment);
 
 }  // namespace typesupport_fastrtps_cpp
@@ -131,7 +130,6 @@ size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_learning_interface
 max_serialized_size_MoveCircle_Result(
   bool & full_bounded,
-  bool & is_plain,
   size_t current_alignment);
 
 }  // namespace typesupport_fastrtps_cpp
@@ -207,7 +205,6 @@ size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_learning_interface
 max_serialized_size_MoveCircle_Feedback(
   bool & full_bounded,
-  bool & is_plain,
   size_t current_alignment);
 
 }  // namespace typesupport_fastrtps_cpp
@@ -283,7 +280,6 @@ size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_learning_interface
 max_serialized_size_MoveCircle_SendGoal_Request(
   bool & full_bounded,
-  bool & is_plain,
   size_t current_alignment);
 
 }  // namespace typesupport_fastrtps_cpp
@@ -360,7 +356,6 @@ size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_learning_interface
 max_serialized_size_MoveCircle_SendGoal_Response(
   bool & full_bounded,
-  bool & is_plain,
   size_t current_alignment);
 
 }  // namespace typesupport_fastrtps_cpp
@@ -456,7 +451,6 @@ size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_learning_interface
 max_serialized_size_MoveCircle_GetResult_Request(
   bool & full_bounded,
-  bool & is_plain,
   size_t current_alignment);
 
 }  // namespace typesupport_fastrtps_cpp
@@ -533,7 +527,6 @@ size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_learning_interface
 max_serialized_size_MoveCircle_GetResult_Response(
   bool & full_bounded,
-  bool & is_plain,
   size_t current_alignment);
 
 }  // namespace typesupport_fastrtps_cpp
@@ -631,7 +624,6 @@ size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_learning_interface
 max_serialized_size_MoveCircle_FeedbackMessage(
   bool & full_bounded,
-  bool & is_plain,
   size_t current_alignment);
 
 }  // namespace typesupport_fastrtps_cpp

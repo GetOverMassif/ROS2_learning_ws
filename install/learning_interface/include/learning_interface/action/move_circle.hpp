@@ -7,5 +7,6 @@
 #include "learning_interface/action/detail/move_circle__struct.hpp"
 #include "learning_interface/action/detail/move_circle__builder.hpp"
 #include "learning_interface/action/detail/move_circle__traits.hpp"
+#include "learning_interface/action/detail/move_circle__type_support.hpp"
 
 #endif  // LEARNING_INTERFACE__ACTION__MOVE_CIRCLE_HPP_

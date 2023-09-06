@@ -7,11 +7,11 @@ module learning_interface {
   module msg {
     struct ObjectPosition {
       @verbatim (language="comment", text=
-        "表示目标的X坐标")
+        " 表示目标的X坐标")
       int32 x;
 
       @verbatim (language="comment", text=
-        "表示目标的Y坐标")
+        " 表示目标的Y坐标")
       int32 y;
     };
   };

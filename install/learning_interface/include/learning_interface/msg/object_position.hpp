@@ -7,5 +7,6 @@
 #include "learning_interface/msg/detail/object_position__struct.hpp"
 #include "learning_interface/msg/detail/object_position__builder.hpp"
 #include "learning_interface/msg/detail/object_position__traits.hpp"
+#include "learning_interface/msg/detail/object_position__type_support.hpp"
 
 #endif  // LEARNING_INTERFACE__MSG__OBJECT_POSITION_HPP_

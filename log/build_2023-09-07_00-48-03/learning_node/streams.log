@@ -1,0 +1,24 @@
+[1.820s] Invoking command in '/home/nio/Documents/ROS2_learning_ws/src/ros2_21_tutorials/learning_node': CONDA_PROMPT_MODIFIER=(py38) PYTHONPATH=/home/nio/Documents/ROS2_learning_ws/build/learning_node/prefix_override:/home/nio/Documents/ROS2_learning_ws/install/learning_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/learning_node build --build-base /home/nio/Documents/ROS2_learning_ws/build/learning_node/build install --record /home/nio/Documents/ROS2_learning_ws/build/learning_node/install.log --single-version-externally-managed
+[1.952s] running egg_info
+[1.953s] writing ../../../build/learning_node/learning_node.egg-info/PKG-INFO
+[1.953s] writing dependency_links to ../../../build/learning_node/learning_node.egg-info/dependency_links.txt
+[1.953s] writing entry points to ../../../build/learning_node/learning_node.egg-info/entry_points.txt
+[1.953s] writing requirements to ../../../build/learning_node/learning_node.egg-info/requires.txt
+[1.953s] writing top-level names to ../../../build/learning_node/learning_node.egg-info/top_level.txt
+[1.978s] reading manifest file '../../../build/learning_node/learning_node.egg-info/SOURCES.txt'
+[1.979s] writing manifest file '../../../build/learning_node/learning_node.egg-info/SOURCES.txt'
+[1.979s] running build
+[1.979s] running build_py
+[1.980s] running install
+[1.980s] running install_lib
+[1.981s] running install_data
+[1.982s] running install_egg_info
+[1.983s] removing '/home/nio/Documents/ROS2_learning_ws/install/learning_node/lib/python3.8/site-packages/learning_node-0.0.0-py3.8.egg-info' (and everything under it)
+[1.983s] Copying ../../../build/learning_node/learning_node.egg-info to /home/nio/Documents/ROS2_learning_ws/install/learning_node/lib/python3.8/site-packages/learning_node-0.0.0-py3.8.egg-info
+[1.984s] running install_scripts
+[1.997s] Installing node_helloworld script to /home/nio/Documents/ROS2_learning_ws/install/learning_node/lib/learning_node
+[1.998s] Installing node_helloworld_class script to /home/nio/Documents/ROS2_learning_ws/install/learning_node/lib/learning_node
+[1.998s] Installing node_object script to /home/nio/Documents/ROS2_learning_ws/install/learning_node/lib/learning_node
+[1.998s] Installing node_object_webcam script to /home/nio/Documents/ROS2_learning_ws/install/learning_node/lib/learning_node
+[1.998s] writing list of installed files to '/home/nio/Documents/ROS2_learning_ws/build/learning_node/install.log'
+[2.026s] Invoked command in '/home/nio/Documents/ROS2_learning_ws/src/ros2_21_tutorials/learning_node' returned '0': CONDA_PROMPT_MODIFIER=(py38) PYTHONPATH=/home/nio/Documents/ROS2_learning_ws/build/learning_node/prefix_override:/home/nio/Documents/ROS2_learning_ws/install/learning_node/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/learning_node build --build-base /home/nio/Documents/ROS2_learning_ws/build/learning_node/build install --record /home/nio/Documents/ROS2_learning_ws/build/learning_node/install.log --single-version-externally-managed

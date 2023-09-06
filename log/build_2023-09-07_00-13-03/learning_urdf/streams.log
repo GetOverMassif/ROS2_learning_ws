@@ -1,0 +1,50 @@
+[1.891s] Invoking command in '/home/nio/Documents/ROS2_learning_ws/src/ros2_21_tutorials/learning_urdf': CONDA_PROMPT_MODIFIER=(py38) PYTHONPATH=/home/nio/Documents/ROS2_learning_ws/build/learning_urdf/prefix_override:/home/nio/Documents/ROS2_learning_ws/install/learning_urdf/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/learning_urdf build --build-base /home/nio/Documents/ROS2_learning_ws/build/learning_urdf/build install --record /home/nio/Documents/ROS2_learning_ws/build/learning_urdf/install.log --single-version-externally-managed
+[2.186s] running egg_info
+[2.187s] creating ../../../build/learning_urdf/learning_urdf.egg-info
+[2.187s] writing ../../../build/learning_urdf/learning_urdf.egg-info/PKG-INFO
+[2.187s] writing dependency_links to ../../../build/learning_urdf/learning_urdf.egg-info/dependency_links.txt
+[2.187s] writing entry points to ../../../build/learning_urdf/learning_urdf.egg-info/entry_points.txt
+[2.187s] writing requirements to ../../../build/learning_urdf/learning_urdf.egg-info/requires.txt
+[2.187s] writing top-level names to ../../../build/learning_urdf/learning_urdf.egg-info/top_level.txt
+[2.189s] writing manifest file '../../../build/learning_urdf/learning_urdf.egg-info/SOURCES.txt'
+[2.232s] reading manifest file '../../../build/learning_urdf/learning_urdf.egg-info/SOURCES.txt'
+[2.233s] writing manifest file '../../../build/learning_urdf/learning_urdf.egg-info/SOURCES.txt'
+[2.233s] running build
+[2.233s] running build_py
+[2.233s] creating /home/nio/Documents/ROS2_learning_ws/build/learning_urdf/build
+[2.233s] creating /home/nio/Documents/ROS2_learning_ws/build/learning_urdf/build/lib
+[2.233s] creating /home/nio/Documents/ROS2_learning_ws/build/learning_urdf/build/lib/learning_urdf
+[2.233s] copying learning_urdf/__init__.py -> /home/nio/Documents/ROS2_learning_ws/build/learning_urdf/build/lib/learning_urdf
+[2.233s] running install
+[2.234s] running install_lib
+[2.236s] creating /home/nio/Documents/ROS2_learning_ws/install/learning_urdf/lib/python3.8/site-packages/learning_urdf
+[2.236s] copying /home/nio/Documents/ROS2_learning_ws/build/learning_urdf/build/lib/learning_urdf/__init__.py -> /home/nio/Documents/ROS2_learning_ws/install/learning_urdf/lib/python3.8/site-packages/learning_urdf
+[2.236s] byte-compiling /home/nio/Documents/ROS2_learning_ws/install/learning_urdf/lib/python3.8/site-packages/learning_urdf/__init__.py to __init__.cpython-38.pyc
+[2.237s] running install_data
+[2.238s] creating /home/nio/Documents/ROS2_learning_ws/install/learning_urdf/share/ament_index
+[2.238s] creating /home/nio/Documents/ROS2_learning_ws/install/learning_urdf/share/ament_index/resource_index
+[2.238s] creating /home/nio/Documents/ROS2_learning_ws/install/learning_urdf/share/ament_index/resource_index/packages
+[2.238s] copying resource/learning_urdf -> /home/nio/Documents/ROS2_learning_ws/install/learning_urdf/share/ament_index/resource_index/packages
+[2.238s] copying package.xml -> /home/nio/Documents/ROS2_learning_ws/install/learning_urdf/share/learning_urdf
+[2.238s] creating /home/nio/Documents/ROS2_learning_ws/install/learning_urdf/share/learning_urdf/launch
+[2.238s] copying launch/display.launch.py -> /home/nio/Documents/ROS2_learning_ws/install/learning_urdf/share/learning_urdf/launch
+[2.238s] creating /home/nio/Documents/ROS2_learning_ws/install/learning_urdf/share/learning_urdf/urdf
+[2.239s] copying urdf/mbot_with_kinect.urdf -> /home/nio/Documents/ROS2_learning_ws/install/learning_urdf/share/learning_urdf/urdf
+[2.239s] copying urdf/mbot_with_camera.urdf -> /home/nio/Documents/ROS2_learning_ws/install/learning_urdf/share/learning_urdf/urdf
+[2.239s] copying urdf/mbot_base.urdf -> /home/nio/Documents/ROS2_learning_ws/install/learning_urdf/share/learning_urdf/urdf
+[2.239s] copying urdf/mbot_with_laser.urdf -> /home/nio/Documents/ROS2_learning_ws/install/learning_urdf/share/learning_urdf/urdf
+[2.239s] creating /home/nio/Documents/ROS2_learning_ws/install/learning_urdf/share/learning_urdf/urdf/sensors
+[2.239s] copying urdf/sensors/kinect_gazebo.xacro -> /home/nio/Documents/ROS2_learning_ws/install/learning_urdf/share/learning_urdf/urdf/sensors
+[2.239s] copying urdf/sensors/lidar_gazebo.xacro -> /home/nio/Documents/ROS2_learning_ws/install/learning_urdf/share/learning_urdf/urdf/sensors
+[2.239s] copying urdf/sensors/camera_gazebo.xacro -> /home/nio/Documents/ROS2_learning_ws/install/learning_urdf/share/learning_urdf/urdf/sensors
+[2.239s] creating /home/nio/Documents/ROS2_learning_ws/install/learning_urdf/share/learning_urdf/meshes
+[2.239s] copying meshes/kinect.jpg -> /home/nio/Documents/ROS2_learning_ws/install/learning_urdf/share/learning_urdf/meshes
+[2.239s] copying meshes/kinect.dae -> /home/nio/Documents/ROS2_learning_ws/install/learning_urdf/share/learning_urdf/meshes
+[2.239s] copying meshes/kinect.tga -> /home/nio/Documents/ROS2_learning_ws/install/learning_urdf/share/learning_urdf/meshes
+[2.239s] creating /home/nio/Documents/ROS2_learning_ws/install/learning_urdf/share/learning_urdf/rviz
+[2.240s] copying rviz/urdf.rviz -> /home/nio/Documents/ROS2_learning_ws/install/learning_urdf/share/learning_urdf/rviz
+[2.240s] running install_egg_info
+[2.241s] Copying ../../../build/learning_urdf/learning_urdf.egg-info to /home/nio/Documents/ROS2_learning_ws/install/learning_urdf/lib/python3.8/site-packages/learning_urdf-0.0.0-py3.8.egg-info
+[2.241s] running install_scripts
+[2.255s] writing list of installed files to '/home/nio/Documents/ROS2_learning_ws/build/learning_urdf/install.log'
+[2.302s] Invoked command in '/home/nio/Documents/ROS2_learning_ws/src/ros2_21_tutorials/learning_urdf' returned '0': CONDA_PROMPT_MODIFIER=(py38) PYTHONPATH=/home/nio/Documents/ROS2_learning_ws/build/learning_urdf/prefix_override:/home/nio/Documents/ROS2_learning_ws/install/learning_urdf/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/learning_urdf build --build-base /home/nio/Documents/ROS2_learning_ws/build/learning_urdf/build install --record /home/nio/Documents/ROS2_learning_ws/build/learning_urdf/install.log --single-version-externally-managed

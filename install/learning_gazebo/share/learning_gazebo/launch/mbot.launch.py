@@ -19,6 +19,8 @@ def generate_launch_description():
     pkg_path = os.path.join(get_package_share_directory('learning_gazebo'))
     xacro_file = os.path.join(pkg_path,'urdf','mbot_gazebo.xacro')
     robot_description_config = xacro.process_file(xacro_file)
+
+    print(f'processing xacro file: {xacro_file}')
     
     # Create a robot_state_publisher node
     params = {'robot_description': robot_description_config.toxml(), 'use_sim_time': use_sim_time}

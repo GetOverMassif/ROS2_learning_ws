@@ -23,7 +23,6 @@ size_t get_serialized_size_learning_interface__msg__ObjectPosition(
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_learning_interface
 size_t max_serialized_size_learning_interface__msg__ObjectPosition(
   bool & full_bounded,
-  bool & is_plain,
   size_t current_alignment);
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_learning_interface

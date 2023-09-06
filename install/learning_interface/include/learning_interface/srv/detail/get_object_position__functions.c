@@ -29,6 +29,32 @@ learning_interface__srv__GetObjectPosition_Request__fini(learning_interface__srv
   // get
 }
 
+bool
+learning_interface__srv__GetObjectPosition_Request__are_equal(const learning_interface__srv__GetObjectPosition_Request * lhs, const learning_interface__srv__GetObjectPosition_Request * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  // get
+  if (lhs->get != rhs->get) {
+    return false;
+  }
+  return true;
+}
+
+bool
+learning_interface__srv__GetObjectPosition_Request__copy(
+  const learning_interface__srv__GetObjectPosition_Request * input,
+  learning_interface__srv__GetObjectPosition_Request * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  // get
+  output->get = input->get;
+  return true;
+}
+
 learning_interface__srv__GetObjectPosition_Request *
 learning_interface__srv__GetObjectPosition_Request__create()
 {
@@ -146,6 +172,63 @@ learning_interface__srv__GetObjectPosition_Request__Sequence__destroy(learning_i
   allocator.deallocate(array, allocator.state);
 }
 
+bool
+learning_interface__srv__GetObjectPosition_Request__Sequence__are_equal(const learning_interface__srv__GetObjectPosition_Request__Sequence * lhs, const learning_interface__srv__GetObjectPosition_Request__Sequence * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  if (lhs->size != rhs->size) {
+    return false;
+  }
+  for (size_t i = 0; i < lhs->size; ++i) {
+    if (!learning_interface__srv__GetObjectPosition_Request__are_equal(&(lhs->data[i]), &(rhs->data[i]))) {
+      return false;
+    }
+  }
+  return true;
+}
+
+bool
+learning_interface__srv__GetObjectPosition_Request__Sequence__copy(
+  const learning_interface__srv__GetObjectPosition_Request__Sequence * input,
+  learning_interface__srv__GetObjectPosition_Request__Sequence * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  if (output->capacity < input->size) {
+    const size_t allocation_size =
+      input->size * sizeof(learning_interface__srv__GetObjectPosition_Request);
+    learning_interface__srv__GetObjectPosition_Request * data =
+      (learning_interface__srv__GetObjectPosition_Request *)realloc(output->data, allocation_size);
+    if (!data) {
+      return false;
+    }
+    for (size_t i = output->capacity; i < input->size; ++i) {
+      if (!learning_interface__srv__GetObjectPosition_Request__init(&data[i])) {
+        /* free currently allocated and return false */
+        for (; i-- > output->capacity; ) {
+          learning_interface__srv__GetObjectPosition_Request__fini(&data[i]);
+        }
+        free(data);
+        return false;
+      }
+    }
+    output->data = data;
+    output->capacity = input->size;
+  }
+  output->size = input->size;
+  for (size_t i = 0; i < input->size; ++i) {
+    if (!learning_interface__srv__GetObjectPosition_Request__copy(
+        &(input->data[i]), &(output->data[i])))
+    {
+      return false;
+    }
+  }
+  return true;
+}
+
 
 bool
 learning_interface__srv__GetObjectPosition_Response__init(learning_interface__srv__GetObjectPosition_Response * msg)
@@ -166,6 +249,38 @@ learning_interface__srv__GetObjectPosition_Response__fini(learning_interface__sr
   }
   // x
   // y
+}
+
+bool
+learning_interface__srv__GetObjectPosition_Response__are_equal(const learning_interface__srv__GetObjectPosition_Response * lhs, const learning_interface__srv__GetObjectPosition_Response * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  // x
+  if (lhs->x != rhs->x) {
+    return false;
+  }
+  // y
+  if (lhs->y != rhs->y) {
+    return false;
+  }
+  return true;
+}
+
+bool
+learning_interface__srv__GetObjectPosition_Response__copy(
+  const learning_interface__srv__GetObjectPosition_Response * input,
+  learning_interface__srv__GetObjectPosition_Response * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  // x
+  output->x = input->x;
+  // y
+  output->y = input->y;
+  return true;
 }
 
 learning_interface__srv__GetObjectPosition_Response *
@@ -283,4 +398,61 @@ learning_interface__srv__GetObjectPosition_Response__Sequence__destroy(learning_
     learning_interface__srv__GetObjectPosition_Response__Sequence__fini(array);
   }
   allocator.deallocate(array, allocator.state);
+}
+
+bool
+learning_interface__srv__GetObjectPosition_Response__Sequence__are_equal(const learning_interface__srv__GetObjectPosition_Response__Sequence * lhs, const learning_interface__srv__GetObjectPosition_Response__Sequence * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  if (lhs->size != rhs->size) {
+    return false;
+  }
+  for (size_t i = 0; i < lhs->size; ++i) {
+    if (!learning_interface__srv__GetObjectPosition_Response__are_equal(&(lhs->data[i]), &(rhs->data[i]))) {
+      return false;
+    }
+  }
+  return true;
+}
+
+bool
+learning_interface__srv__GetObjectPosition_Response__Sequence__copy(
+  const learning_interface__srv__GetObjectPosition_Response__Sequence * input,
+  learning_interface__srv__GetObjectPosition_Response__Sequence * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  if (output->capacity < input->size) {
+    const size_t allocation_size =
+      input->size * sizeof(learning_interface__srv__GetObjectPosition_Response);
+    learning_interface__srv__GetObjectPosition_Response * data =
+      (learning_interface__srv__GetObjectPosition_Response *)realloc(output->data, allocation_size);
+    if (!data) {
+      return false;
+    }
+    for (size_t i = output->capacity; i < input->size; ++i) {
+      if (!learning_interface__srv__GetObjectPosition_Response__init(&data[i])) {
+        /* free currently allocated and return false */
+        for (; i-- > output->capacity; ) {
+          learning_interface__srv__GetObjectPosition_Response__fini(&data[i]);
+        }
+        free(data);
+        return false;
+      }
+    }
+    output->data = data;
+    output->capacity = input->size;
+  }
+  output->size = input->size;
+  for (size_t i = 0; i < input->size; ++i) {
+    if (!learning_interface__srv__GetObjectPosition_Response__copy(
+        &(input->data[i]), &(output->data[i])))
+    {
+      return false;
+    }
+  }
+  return true;
 }

@@ -17,7 +17,7 @@ extern "C"
 {
 #endif
 
-void learning_interface__action__MoveCircle_Goal__rosidl_typesupport_introspection_c__MoveCircle_Goal_init_function(
+void MoveCircle_Goal__rosidl_typesupport_introspection_c__MoveCircle_Goal_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -26,12 +26,12 @@ void learning_interface__action__MoveCircle_Goal__rosidl_typesupport_introspecti
   learning_interface__action__MoveCircle_Goal__init(message_memory);
 }
 
-void learning_interface__action__MoveCircle_Goal__rosidl_typesupport_introspection_c__MoveCircle_Goal_fini_function(void * message_memory)
+void MoveCircle_Goal__rosidl_typesupport_introspection_c__MoveCircle_Goal_fini_function(void * message_memory)
 {
   learning_interface__action__MoveCircle_Goal__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember learning_interface__action__MoveCircle_Goal__rosidl_typesupport_introspection_c__MoveCircle_Goal_message_member_array[1] = {
+static rosidl_typesupport_introspection_c__MessageMember MoveCircle_Goal__rosidl_typesupport_introspection_c__MoveCircle_Goal_message_member_array[1] = {
   {
     "enable",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
@@ -49,32 +49,32 @@ static rosidl_typesupport_introspection_c__MessageMember learning_interface__act
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers learning_interface__action__MoveCircle_Goal__rosidl_typesupport_introspection_c__MoveCircle_Goal_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers MoveCircle_Goal__rosidl_typesupport_introspection_c__MoveCircle_Goal_message_members = {
   "learning_interface__action",  // message namespace
   "MoveCircle_Goal",  // message name
   1,  // number of fields
   sizeof(learning_interface__action__MoveCircle_Goal),
-  learning_interface__action__MoveCircle_Goal__rosidl_typesupport_introspection_c__MoveCircle_Goal_message_member_array,  // message members
-  learning_interface__action__MoveCircle_Goal__rosidl_typesupport_introspection_c__MoveCircle_Goal_init_function,  // function to initialize message memory (memory has to be allocated)
-  learning_interface__action__MoveCircle_Goal__rosidl_typesupport_introspection_c__MoveCircle_Goal_fini_function  // function to terminate message instance (will not free memory)
+  MoveCircle_Goal__rosidl_typesupport_introspection_c__MoveCircle_Goal_message_member_array,  // message members
+  MoveCircle_Goal__rosidl_typesupport_introspection_c__MoveCircle_Goal_init_function,  // function to initialize message memory (memory has to be allocated)
+  MoveCircle_Goal__rosidl_typesupport_introspection_c__MoveCircle_Goal_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t learning_interface__action__MoveCircle_Goal__rosidl_typesupport_introspection_c__MoveCircle_Goal_message_type_support_handle = {
+static rosidl_message_type_support_t MoveCircle_Goal__rosidl_typesupport_introspection_c__MoveCircle_Goal_message_type_support_handle = {
   0,
-  &learning_interface__action__MoveCircle_Goal__rosidl_typesupport_introspection_c__MoveCircle_Goal_message_members,
+  &MoveCircle_Goal__rosidl_typesupport_introspection_c__MoveCircle_Goal_message_members,
   get_message_typesupport_handle_function,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_learning_interface
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, learning_interface, action, MoveCircle_Goal)() {
-  if (!learning_interface__action__MoveCircle_Goal__rosidl_typesupport_introspection_c__MoveCircle_Goal_message_type_support_handle.typesupport_identifier) {
-    learning_interface__action__MoveCircle_Goal__rosidl_typesupport_introspection_c__MoveCircle_Goal_message_type_support_handle.typesupport_identifier =
+  if (!MoveCircle_Goal__rosidl_typesupport_introspection_c__MoveCircle_Goal_message_type_support_handle.typesupport_identifier) {
+    MoveCircle_Goal__rosidl_typesupport_introspection_c__MoveCircle_Goal_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &learning_interface__action__MoveCircle_Goal__rosidl_typesupport_introspection_c__MoveCircle_Goal_message_type_support_handle;
+  return &MoveCircle_Goal__rosidl_typesupport_introspection_c__MoveCircle_Goal_message_type_support_handle;
 }
 #ifdef __cplusplus
 }
@@ -103,7 +103,7 @@ extern "C"
 {
 #endif
 
-void learning_interface__action__MoveCircle_Result__rosidl_typesupport_introspection_c__MoveCircle_Result_init_function(
+void MoveCircle_Result__rosidl_typesupport_introspection_c__MoveCircle_Result_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -112,12 +112,12 @@ void learning_interface__action__MoveCircle_Result__rosidl_typesupport_introspec
   learning_interface__action__MoveCircle_Result__init(message_memory);
 }
 
-void learning_interface__action__MoveCircle_Result__rosidl_typesupport_introspection_c__MoveCircle_Result_fini_function(void * message_memory)
+void MoveCircle_Result__rosidl_typesupport_introspection_c__MoveCircle_Result_fini_function(void * message_memory)
 {
   learning_interface__action__MoveCircle_Result__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember learning_interface__action__MoveCircle_Result__rosidl_typesupport_introspection_c__MoveCircle_Result_message_member_array[1] = {
+static rosidl_typesupport_introspection_c__MessageMember MoveCircle_Result__rosidl_typesupport_introspection_c__MoveCircle_Result_message_member_array[1] = {
   {
     "finish",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
@@ -135,32 +135,32 @@ static rosidl_typesupport_introspection_c__MessageMember learning_interface__act
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers learning_interface__action__MoveCircle_Result__rosidl_typesupport_introspection_c__MoveCircle_Result_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers MoveCircle_Result__rosidl_typesupport_introspection_c__MoveCircle_Result_message_members = {
   "learning_interface__action",  // message namespace
   "MoveCircle_Result",  // message name
   1,  // number of fields
   sizeof(learning_interface__action__MoveCircle_Result),
-  learning_interface__action__MoveCircle_Result__rosidl_typesupport_introspection_c__MoveCircle_Result_message_member_array,  // message members
-  learning_interface__action__MoveCircle_Result__rosidl_typesupport_introspection_c__MoveCircle_Result_init_function,  // function to initialize message memory (memory has to be allocated)
-  learning_interface__action__MoveCircle_Result__rosidl_typesupport_introspection_c__MoveCircle_Result_fini_function  // function to terminate message instance (will not free memory)
+  MoveCircle_Result__rosidl_typesupport_introspection_c__MoveCircle_Result_message_member_array,  // message members
+  MoveCircle_Result__rosidl_typesupport_introspection_c__MoveCircle_Result_init_function,  // function to initialize message memory (memory has to be allocated)
+  MoveCircle_Result__rosidl_typesupport_introspection_c__MoveCircle_Result_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t learning_interface__action__MoveCircle_Result__rosidl_typesupport_introspection_c__MoveCircle_Result_message_type_support_handle = {
+static rosidl_message_type_support_t MoveCircle_Result__rosidl_typesupport_introspection_c__MoveCircle_Result_message_type_support_handle = {
   0,
-  &learning_interface__action__MoveCircle_Result__rosidl_typesupport_introspection_c__MoveCircle_Result_message_members,
+  &MoveCircle_Result__rosidl_typesupport_introspection_c__MoveCircle_Result_message_members,
   get_message_typesupport_handle_function,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_learning_interface
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, learning_interface, action, MoveCircle_Result)() {
-  if (!learning_interface__action__MoveCircle_Result__rosidl_typesupport_introspection_c__MoveCircle_Result_message_type_support_handle.typesupport_identifier) {
-    learning_interface__action__MoveCircle_Result__rosidl_typesupport_introspection_c__MoveCircle_Result_message_type_support_handle.typesupport_identifier =
+  if (!MoveCircle_Result__rosidl_typesupport_introspection_c__MoveCircle_Result_message_type_support_handle.typesupport_identifier) {
+    MoveCircle_Result__rosidl_typesupport_introspection_c__MoveCircle_Result_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &learning_interface__action__MoveCircle_Result__rosidl_typesupport_introspection_c__MoveCircle_Result_message_type_support_handle;
+  return &MoveCircle_Result__rosidl_typesupport_introspection_c__MoveCircle_Result_message_type_support_handle;
 }
 #ifdef __cplusplus
 }
@@ -189,7 +189,7 @@ extern "C"
 {
 #endif
 
-void learning_interface__action__MoveCircle_Feedback__rosidl_typesupport_introspection_c__MoveCircle_Feedback_init_function(
+void MoveCircle_Feedback__rosidl_typesupport_introspection_c__MoveCircle_Feedback_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -198,12 +198,12 @@ void learning_interface__action__MoveCircle_Feedback__rosidl_typesupport_introsp
   learning_interface__action__MoveCircle_Feedback__init(message_memory);
 }
 
-void learning_interface__action__MoveCircle_Feedback__rosidl_typesupport_introspection_c__MoveCircle_Feedback_fini_function(void * message_memory)
+void MoveCircle_Feedback__rosidl_typesupport_introspection_c__MoveCircle_Feedback_fini_function(void * message_memory)
 {
   learning_interface__action__MoveCircle_Feedback__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember learning_interface__action__MoveCircle_Feedback__rosidl_typesupport_introspection_c__MoveCircle_Feedback_message_member_array[1] = {
+static rosidl_typesupport_introspection_c__MessageMember MoveCircle_Feedback__rosidl_typesupport_introspection_c__MoveCircle_Feedback_message_member_array[1] = {
   {
     "state",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
@@ -221,32 +221,32 @@ static rosidl_typesupport_introspection_c__MessageMember learning_interface__act
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers learning_interface__action__MoveCircle_Feedback__rosidl_typesupport_introspection_c__MoveCircle_Feedback_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers MoveCircle_Feedback__rosidl_typesupport_introspection_c__MoveCircle_Feedback_message_members = {
   "learning_interface__action",  // message namespace
   "MoveCircle_Feedback",  // message name
   1,  // number of fields
   sizeof(learning_interface__action__MoveCircle_Feedback),
-  learning_interface__action__MoveCircle_Feedback__rosidl_typesupport_introspection_c__MoveCircle_Feedback_message_member_array,  // message members
-  learning_interface__action__MoveCircle_Feedback__rosidl_typesupport_introspection_c__MoveCircle_Feedback_init_function,  // function to initialize message memory (memory has to be allocated)
-  learning_interface__action__MoveCircle_Feedback__rosidl_typesupport_introspection_c__MoveCircle_Feedback_fini_function  // function to terminate message instance (will not free memory)
+  MoveCircle_Feedback__rosidl_typesupport_introspection_c__MoveCircle_Feedback_message_member_array,  // message members
+  MoveCircle_Feedback__rosidl_typesupport_introspection_c__MoveCircle_Feedback_init_function,  // function to initialize message memory (memory has to be allocated)
+  MoveCircle_Feedback__rosidl_typesupport_introspection_c__MoveCircle_Feedback_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t learning_interface__action__MoveCircle_Feedback__rosidl_typesupport_introspection_c__MoveCircle_Feedback_message_type_support_handle = {
+static rosidl_message_type_support_t MoveCircle_Feedback__rosidl_typesupport_introspection_c__MoveCircle_Feedback_message_type_support_handle = {
   0,
-  &learning_interface__action__MoveCircle_Feedback__rosidl_typesupport_introspection_c__MoveCircle_Feedback_message_members,
+  &MoveCircle_Feedback__rosidl_typesupport_introspection_c__MoveCircle_Feedback_message_members,
   get_message_typesupport_handle_function,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_learning_interface
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, learning_interface, action, MoveCircle_Feedback)() {
-  if (!learning_interface__action__MoveCircle_Feedback__rosidl_typesupport_introspection_c__MoveCircle_Feedback_message_type_support_handle.typesupport_identifier) {
-    learning_interface__action__MoveCircle_Feedback__rosidl_typesupport_introspection_c__MoveCircle_Feedback_message_type_support_handle.typesupport_identifier =
+  if (!MoveCircle_Feedback__rosidl_typesupport_introspection_c__MoveCircle_Feedback_message_type_support_handle.typesupport_identifier) {
+    MoveCircle_Feedback__rosidl_typesupport_introspection_c__MoveCircle_Feedback_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &learning_interface__action__MoveCircle_Feedback__rosidl_typesupport_introspection_c__MoveCircle_Feedback_message_type_support_handle;
+  return &MoveCircle_Feedback__rosidl_typesupport_introspection_c__MoveCircle_Feedback_message_type_support_handle;
 }
 #ifdef __cplusplus
 }
@@ -286,7 +286,7 @@ extern "C"
 {
 #endif
 
-void learning_interface__action__MoveCircle_SendGoal_Request__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Request_init_function(
+void MoveCircle_SendGoal_Request__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Request_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -295,12 +295,12 @@ void learning_interface__action__MoveCircle_SendGoal_Request__rosidl_typesupport
   learning_interface__action__MoveCircle_SendGoal_Request__init(message_memory);
 }
 
-void learning_interface__action__MoveCircle_SendGoal_Request__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Request_fini_function(void * message_memory)
+void MoveCircle_SendGoal_Request__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Request_fini_function(void * message_memory)
 {
   learning_interface__action__MoveCircle_SendGoal_Request__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember learning_interface__action__MoveCircle_SendGoal_Request__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Request_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember MoveCircle_SendGoal_Request__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Request_message_member_array[2] = {
   {
     "goal_id",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
@@ -333,36 +333,36 @@ static rosidl_typesupport_introspection_c__MessageMember learning_interface__act
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers learning_interface__action__MoveCircle_SendGoal_Request__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Request_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers MoveCircle_SendGoal_Request__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Request_message_members = {
   "learning_interface__action",  // message namespace
   "MoveCircle_SendGoal_Request",  // message name
   2,  // number of fields
   sizeof(learning_interface__action__MoveCircle_SendGoal_Request),
-  learning_interface__action__MoveCircle_SendGoal_Request__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Request_message_member_array,  // message members
-  learning_interface__action__MoveCircle_SendGoal_Request__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Request_init_function,  // function to initialize message memory (memory has to be allocated)
-  learning_interface__action__MoveCircle_SendGoal_Request__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Request_fini_function  // function to terminate message instance (will not free memory)
+  MoveCircle_SendGoal_Request__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Request_message_member_array,  // message members
+  MoveCircle_SendGoal_Request__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Request_init_function,  // function to initialize message memory (memory has to be allocated)
+  MoveCircle_SendGoal_Request__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Request_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t learning_interface__action__MoveCircle_SendGoal_Request__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Request_message_type_support_handle = {
+static rosidl_message_type_support_t MoveCircle_SendGoal_Request__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Request_message_type_support_handle = {
   0,
-  &learning_interface__action__MoveCircle_SendGoal_Request__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Request_message_members,
+  &MoveCircle_SendGoal_Request__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Request_message_members,
   get_message_typesupport_handle_function,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_learning_interface
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, learning_interface, action, MoveCircle_SendGoal_Request)() {
-  learning_interface__action__MoveCircle_SendGoal_Request__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Request_message_member_array[0].members_ =
+  MoveCircle_SendGoal_Request__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Request_message_member_array[0].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, unique_identifier_msgs, msg, UUID)();
-  learning_interface__action__MoveCircle_SendGoal_Request__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Request_message_member_array[1].members_ =
+  MoveCircle_SendGoal_Request__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Request_message_member_array[1].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, learning_interface, action, MoveCircle_Goal)();
-  if (!learning_interface__action__MoveCircle_SendGoal_Request__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Request_message_type_support_handle.typesupport_identifier) {
-    learning_interface__action__MoveCircle_SendGoal_Request__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Request_message_type_support_handle.typesupport_identifier =
+  if (!MoveCircle_SendGoal_Request__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Request_message_type_support_handle.typesupport_identifier) {
+    MoveCircle_SendGoal_Request__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Request_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &learning_interface__action__MoveCircle_SendGoal_Request__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Request_message_type_support_handle;
+  return &MoveCircle_SendGoal_Request__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Request_message_type_support_handle;
 }
 #ifdef __cplusplus
 }
@@ -397,7 +397,7 @@ extern "C"
 {
 #endif
 
-void learning_interface__action__MoveCircle_SendGoal_Response__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Response_init_function(
+void MoveCircle_SendGoal_Response__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Response_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -406,12 +406,12 @@ void learning_interface__action__MoveCircle_SendGoal_Response__rosidl_typesuppor
   learning_interface__action__MoveCircle_SendGoal_Response__init(message_memory);
 }
 
-void learning_interface__action__MoveCircle_SendGoal_Response__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Response_fini_function(void * message_memory)
+void MoveCircle_SendGoal_Response__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Response_fini_function(void * message_memory)
 {
   learning_interface__action__MoveCircle_SendGoal_Response__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember learning_interface__action__MoveCircle_SendGoal_Response__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Response_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember MoveCircle_SendGoal_Response__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Response_message_member_array[2] = {
   {
     "accepted",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
@@ -444,34 +444,34 @@ static rosidl_typesupport_introspection_c__MessageMember learning_interface__act
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers learning_interface__action__MoveCircle_SendGoal_Response__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Response_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers MoveCircle_SendGoal_Response__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Response_message_members = {
   "learning_interface__action",  // message namespace
   "MoveCircle_SendGoal_Response",  // message name
   2,  // number of fields
   sizeof(learning_interface__action__MoveCircle_SendGoal_Response),
-  learning_interface__action__MoveCircle_SendGoal_Response__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Response_message_member_array,  // message members
-  learning_interface__action__MoveCircle_SendGoal_Response__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Response_init_function,  // function to initialize message memory (memory has to be allocated)
-  learning_interface__action__MoveCircle_SendGoal_Response__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Response_fini_function  // function to terminate message instance (will not free memory)
+  MoveCircle_SendGoal_Response__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Response_message_member_array,  // message members
+  MoveCircle_SendGoal_Response__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Response_init_function,  // function to initialize message memory (memory has to be allocated)
+  MoveCircle_SendGoal_Response__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Response_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t learning_interface__action__MoveCircle_SendGoal_Response__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Response_message_type_support_handle = {
+static rosidl_message_type_support_t MoveCircle_SendGoal_Response__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Response_message_type_support_handle = {
   0,
-  &learning_interface__action__MoveCircle_SendGoal_Response__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Response_message_members,
+  &MoveCircle_SendGoal_Response__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Response_message_members,
   get_message_typesupport_handle_function,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_learning_interface
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, learning_interface, action, MoveCircle_SendGoal_Response)() {
-  learning_interface__action__MoveCircle_SendGoal_Response__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Response_message_member_array[1].members_ =
+  MoveCircle_SendGoal_Response__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Response_message_member_array[1].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, builtin_interfaces, msg, Time)();
-  if (!learning_interface__action__MoveCircle_SendGoal_Response__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Response_message_type_support_handle.typesupport_identifier) {
-    learning_interface__action__MoveCircle_SendGoal_Response__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Response_message_type_support_handle.typesupport_identifier =
+  if (!MoveCircle_SendGoal_Response__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Response_message_type_support_handle.typesupport_identifier) {
+    MoveCircle_SendGoal_Response__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Response_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &learning_interface__action__MoveCircle_SendGoal_Response__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Response_message_type_support_handle;
+  return &MoveCircle_SendGoal_Response__rosidl_typesupport_introspection_c__MoveCircle_SendGoal_Response_message_type_support_handle;
 }
 #ifdef __cplusplus
 }
@@ -565,7 +565,7 @@ extern "C"
 {
 #endif
 
-void learning_interface__action__MoveCircle_GetResult_Request__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Request_init_function(
+void MoveCircle_GetResult_Request__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Request_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -574,12 +574,12 @@ void learning_interface__action__MoveCircle_GetResult_Request__rosidl_typesuppor
   learning_interface__action__MoveCircle_GetResult_Request__init(message_memory);
 }
 
-void learning_interface__action__MoveCircle_GetResult_Request__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Request_fini_function(void * message_memory)
+void MoveCircle_GetResult_Request__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Request_fini_function(void * message_memory)
 {
   learning_interface__action__MoveCircle_GetResult_Request__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember learning_interface__action__MoveCircle_GetResult_Request__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Request_message_member_array[1] = {
+static rosidl_typesupport_introspection_c__MessageMember MoveCircle_GetResult_Request__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Request_message_member_array[1] = {
   {
     "goal_id",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
@@ -597,34 +597,34 @@ static rosidl_typesupport_introspection_c__MessageMember learning_interface__act
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers learning_interface__action__MoveCircle_GetResult_Request__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Request_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers MoveCircle_GetResult_Request__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Request_message_members = {
   "learning_interface__action",  // message namespace
   "MoveCircle_GetResult_Request",  // message name
   1,  // number of fields
   sizeof(learning_interface__action__MoveCircle_GetResult_Request),
-  learning_interface__action__MoveCircle_GetResult_Request__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Request_message_member_array,  // message members
-  learning_interface__action__MoveCircle_GetResult_Request__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Request_init_function,  // function to initialize message memory (memory has to be allocated)
-  learning_interface__action__MoveCircle_GetResult_Request__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Request_fini_function  // function to terminate message instance (will not free memory)
+  MoveCircle_GetResult_Request__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Request_message_member_array,  // message members
+  MoveCircle_GetResult_Request__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Request_init_function,  // function to initialize message memory (memory has to be allocated)
+  MoveCircle_GetResult_Request__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Request_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t learning_interface__action__MoveCircle_GetResult_Request__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Request_message_type_support_handle = {
+static rosidl_message_type_support_t MoveCircle_GetResult_Request__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Request_message_type_support_handle = {
   0,
-  &learning_interface__action__MoveCircle_GetResult_Request__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Request_message_members,
+  &MoveCircle_GetResult_Request__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Request_message_members,
   get_message_typesupport_handle_function,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_learning_interface
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, learning_interface, action, MoveCircle_GetResult_Request)() {
-  learning_interface__action__MoveCircle_GetResult_Request__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Request_message_member_array[0].members_ =
+  MoveCircle_GetResult_Request__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Request_message_member_array[0].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, unique_identifier_msgs, msg, UUID)();
-  if (!learning_interface__action__MoveCircle_GetResult_Request__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Request_message_type_support_handle.typesupport_identifier) {
-    learning_interface__action__MoveCircle_GetResult_Request__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Request_message_type_support_handle.typesupport_identifier =
+  if (!MoveCircle_GetResult_Request__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Request_message_type_support_handle.typesupport_identifier) {
+    MoveCircle_GetResult_Request__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Request_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &learning_interface__action__MoveCircle_GetResult_Request__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Request_message_type_support_handle;
+  return &MoveCircle_GetResult_Request__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Request_message_type_support_handle;
 }
 #ifdef __cplusplus
 }
@@ -661,7 +661,7 @@ extern "C"
 {
 #endif
 
-void learning_interface__action__MoveCircle_GetResult_Response__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Response_init_function(
+void MoveCircle_GetResult_Response__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Response_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -670,12 +670,12 @@ void learning_interface__action__MoveCircle_GetResult_Response__rosidl_typesuppo
   learning_interface__action__MoveCircle_GetResult_Response__init(message_memory);
 }
 
-void learning_interface__action__MoveCircle_GetResult_Response__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Response_fini_function(void * message_memory)
+void MoveCircle_GetResult_Response__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Response_fini_function(void * message_memory)
 {
   learning_interface__action__MoveCircle_GetResult_Response__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember learning_interface__action__MoveCircle_GetResult_Response__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Response_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember MoveCircle_GetResult_Response__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Response_message_member_array[2] = {
   {
     "status",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT8,  // type
@@ -708,34 +708,34 @@ static rosidl_typesupport_introspection_c__MessageMember learning_interface__act
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers learning_interface__action__MoveCircle_GetResult_Response__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Response_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers MoveCircle_GetResult_Response__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Response_message_members = {
   "learning_interface__action",  // message namespace
   "MoveCircle_GetResult_Response",  // message name
   2,  // number of fields
   sizeof(learning_interface__action__MoveCircle_GetResult_Response),
-  learning_interface__action__MoveCircle_GetResult_Response__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Response_message_member_array,  // message members
-  learning_interface__action__MoveCircle_GetResult_Response__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Response_init_function,  // function to initialize message memory (memory has to be allocated)
-  learning_interface__action__MoveCircle_GetResult_Response__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Response_fini_function  // function to terminate message instance (will not free memory)
+  MoveCircle_GetResult_Response__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Response_message_member_array,  // message members
+  MoveCircle_GetResult_Response__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Response_init_function,  // function to initialize message memory (memory has to be allocated)
+  MoveCircle_GetResult_Response__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Response_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t learning_interface__action__MoveCircle_GetResult_Response__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Response_message_type_support_handle = {
+static rosidl_message_type_support_t MoveCircle_GetResult_Response__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Response_message_type_support_handle = {
   0,
-  &learning_interface__action__MoveCircle_GetResult_Response__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Response_message_members,
+  &MoveCircle_GetResult_Response__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Response_message_members,
   get_message_typesupport_handle_function,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_learning_interface
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, learning_interface, action, MoveCircle_GetResult_Response)() {
-  learning_interface__action__MoveCircle_GetResult_Response__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Response_message_member_array[1].members_ =
+  MoveCircle_GetResult_Response__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Response_message_member_array[1].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, learning_interface, action, MoveCircle_Result)();
-  if (!learning_interface__action__MoveCircle_GetResult_Response__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Response_message_type_support_handle.typesupport_identifier) {
-    learning_interface__action__MoveCircle_GetResult_Response__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Response_message_type_support_handle.typesupport_identifier =
+  if (!MoveCircle_GetResult_Response__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Response_message_type_support_handle.typesupport_identifier) {
+    MoveCircle_GetResult_Response__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Response_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &learning_interface__action__MoveCircle_GetResult_Response__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Response_message_type_support_handle;
+  return &MoveCircle_GetResult_Response__rosidl_typesupport_introspection_c__MoveCircle_GetResult_Response_message_type_support_handle;
 }
 #ifdef __cplusplus
 }
@@ -837,7 +837,7 @@ extern "C"
 {
 #endif
 
-void learning_interface__action__MoveCircle_FeedbackMessage__rosidl_typesupport_introspection_c__MoveCircle_FeedbackMessage_init_function(
+void MoveCircle_FeedbackMessage__rosidl_typesupport_introspection_c__MoveCircle_FeedbackMessage_init_function(
   void * message_memory, enum rosidl_runtime_c__message_initialization _init)
 {
   // TODO(karsten1987): initializers are not yet implemented for typesupport c
@@ -846,12 +846,12 @@ void learning_interface__action__MoveCircle_FeedbackMessage__rosidl_typesupport_
   learning_interface__action__MoveCircle_FeedbackMessage__init(message_memory);
 }
 
-void learning_interface__action__MoveCircle_FeedbackMessage__rosidl_typesupport_introspection_c__MoveCircle_FeedbackMessage_fini_function(void * message_memory)
+void MoveCircle_FeedbackMessage__rosidl_typesupport_introspection_c__MoveCircle_FeedbackMessage_fini_function(void * message_memory)
 {
   learning_interface__action__MoveCircle_FeedbackMessage__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember learning_interface__action__MoveCircle_FeedbackMessage__rosidl_typesupport_introspection_c__MoveCircle_FeedbackMessage_message_member_array[2] = {
+static rosidl_typesupport_introspection_c__MessageMember MoveCircle_FeedbackMessage__rosidl_typesupport_introspection_c__MoveCircle_FeedbackMessage_message_member_array[2] = {
   {
     "goal_id",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
@@ -884,36 +884,36 @@ static rosidl_typesupport_introspection_c__MessageMember learning_interface__act
   }
 };
 
-static const rosidl_typesupport_introspection_c__MessageMembers learning_interface__action__MoveCircle_FeedbackMessage__rosidl_typesupport_introspection_c__MoveCircle_FeedbackMessage_message_members = {
+static const rosidl_typesupport_introspection_c__MessageMembers MoveCircle_FeedbackMessage__rosidl_typesupport_introspection_c__MoveCircle_FeedbackMessage_message_members = {
   "learning_interface__action",  // message namespace
   "MoveCircle_FeedbackMessage",  // message name
   2,  // number of fields
   sizeof(learning_interface__action__MoveCircle_FeedbackMessage),
-  learning_interface__action__MoveCircle_FeedbackMessage__rosidl_typesupport_introspection_c__MoveCircle_FeedbackMessage_message_member_array,  // message members
-  learning_interface__action__MoveCircle_FeedbackMessage__rosidl_typesupport_introspection_c__MoveCircle_FeedbackMessage_init_function,  // function to initialize message memory (memory has to be allocated)
-  learning_interface__action__MoveCircle_FeedbackMessage__rosidl_typesupport_introspection_c__MoveCircle_FeedbackMessage_fini_function  // function to terminate message instance (will not free memory)
+  MoveCircle_FeedbackMessage__rosidl_typesupport_introspection_c__MoveCircle_FeedbackMessage_message_member_array,  // message members
+  MoveCircle_FeedbackMessage__rosidl_typesupport_introspection_c__MoveCircle_FeedbackMessage_init_function,  // function to initialize message memory (memory has to be allocated)
+  MoveCircle_FeedbackMessage__rosidl_typesupport_introspection_c__MoveCircle_FeedbackMessage_fini_function  // function to terminate message instance (will not free memory)
 };
 
 // this is not const since it must be initialized on first access
 // since C does not allow non-integral compile-time constants
-static rosidl_message_type_support_t learning_interface__action__MoveCircle_FeedbackMessage__rosidl_typesupport_introspection_c__MoveCircle_FeedbackMessage_message_type_support_handle = {
+static rosidl_message_type_support_t MoveCircle_FeedbackMessage__rosidl_typesupport_introspection_c__MoveCircle_FeedbackMessage_message_type_support_handle = {
   0,
-  &learning_interface__action__MoveCircle_FeedbackMessage__rosidl_typesupport_introspection_c__MoveCircle_FeedbackMessage_message_members,
+  &MoveCircle_FeedbackMessage__rosidl_typesupport_introspection_c__MoveCircle_FeedbackMessage_message_members,
   get_message_typesupport_handle_function,
 };
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_EXPORT_learning_interface
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, learning_interface, action, MoveCircle_FeedbackMessage)() {
-  learning_interface__action__MoveCircle_FeedbackMessage__rosidl_typesupport_introspection_c__MoveCircle_FeedbackMessage_message_member_array[0].members_ =
+  MoveCircle_FeedbackMessage__rosidl_typesupport_introspection_c__MoveCircle_FeedbackMessage_message_member_array[0].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, unique_identifier_msgs, msg, UUID)();
-  learning_interface__action__MoveCircle_FeedbackMessage__rosidl_typesupport_introspection_c__MoveCircle_FeedbackMessage_message_member_array[1].members_ =
+  MoveCircle_FeedbackMessage__rosidl_typesupport_introspection_c__MoveCircle_FeedbackMessage_message_member_array[1].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, learning_interface, action, MoveCircle_Feedback)();
-  if (!learning_interface__action__MoveCircle_FeedbackMessage__rosidl_typesupport_introspection_c__MoveCircle_FeedbackMessage_message_type_support_handle.typesupport_identifier) {
-    learning_interface__action__MoveCircle_FeedbackMessage__rosidl_typesupport_introspection_c__MoveCircle_FeedbackMessage_message_type_support_handle.typesupport_identifier =
+  if (!MoveCircle_FeedbackMessage__rosidl_typesupport_introspection_c__MoveCircle_FeedbackMessage_message_type_support_handle.typesupport_identifier) {
+    MoveCircle_FeedbackMessage__rosidl_typesupport_introspection_c__MoveCircle_FeedbackMessage_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;
   }
-  return &learning_interface__action__MoveCircle_FeedbackMessage__rosidl_typesupport_introspection_c__MoveCircle_FeedbackMessage_message_type_support_handle;
+  return &MoveCircle_FeedbackMessage__rosidl_typesupport_introspection_c__MoveCircle_FeedbackMessage_message_type_support_handle;
 }
 #ifdef __cplusplus
 }

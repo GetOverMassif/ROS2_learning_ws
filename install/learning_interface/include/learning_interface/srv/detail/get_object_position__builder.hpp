@@ -5,11 +5,10 @@
 #ifndef LEARNING_INTERFACE__SRV__DETAIL__GET_OBJECT_POSITION__BUILDER_HPP_
 #define LEARNING_INTERFACE__SRV__DETAIL__GET_OBJECT_POSITION__BUILDER_HPP_
 
+#include "learning_interface/srv/detail/get_object_position__struct.hpp"
+#include <rosidl_runtime_cpp/message_initialization.hpp>
 #include <algorithm>
 #include <utility>
-
-#include "learning_interface/srv/detail/get_object_position__struct.hpp"
-#include "rosidl_runtime_cpp/message_initialization.hpp"
 
 
 namespace learning_interface

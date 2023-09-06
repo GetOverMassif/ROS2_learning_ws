@@ -1,0 +1,11 @@
+--2023-09-06 22:25:55--  https://mirrors.tuna.tsinghua.edu.cn/github-raw/ros/rosdistro/master/rosdep/sources.list.d/20-default.list
+正在解析主机 mirrors.tuna.tsinghua.edu.cn (mirrors.tuna.tsinghua.edu.cn)... 2402:f000:1:400::2, 101.6.15.130
+正在连接 mirrors.tuna.tsinghua.edu.cn (mirrors.tuna.tsinghua.edu.cn)|2402:f000:1:400::2|:443... 已连接。
+已发出 HTTP 请求，正在等待回应... 200 OK
+长度： 550 [application/octet-stream]
+正在保存至: “/etc/ros/rosdep/sources.list.d/20-default.list”
+
+                /etc/ros/rosdep/   0%[                                                         ]       0  --.-KB/s               /etc/ros/rosdep/sources.list.d/2 100%[========================================================>]     550  --.-KB/s    用时 0s    
+
+2023-09-06 22:25:55 (306 MB/s) - 已保存 “/etc/ros/rosdep/sources.list.d/20-default.list” [550/550])
+

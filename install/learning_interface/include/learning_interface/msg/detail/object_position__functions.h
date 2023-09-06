@@ -66,6 +66,32 @@ ROSIDL_GENERATOR_C_PUBLIC_learning_interface
 void
 learning_interface__msg__ObjectPosition__destroy(learning_interface__msg__ObjectPosition * msg);
 
+/// Check for msg/ObjectPosition message equality.
+/**
+ * \param[in] lhs The message on the left hand size of the equality operator.
+ * \param[in] rhs The message on the right hand size of the equality operator.
+ * \return true if messages are equal, otherwise false.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_learning_interface
+bool
+learning_interface__msg__ObjectPosition__are_equal(const learning_interface__msg__ObjectPosition * lhs, const learning_interface__msg__ObjectPosition * rhs);
+
+/// Copy a msg/ObjectPosition message.
+/**
+ * This functions performs a deep copy, as opposed to the shallow copy that
+ * plain assignment yields.
+ *
+ * \param[in] input The source message pointer.
+ * \param[out] output The target message pointer, which must
+ *   have been initialized before calling this function.
+ * \return true if successful, or false if either pointer is null
+ *   or memory allocation fails.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_learning_interface
+bool
+learning_interface__msg__ObjectPosition__copy(
+  const learning_interface__msg__ObjectPosition * input,
+  learning_interface__msg__ObjectPosition * output);
 
 /// Initialize array of msg/ObjectPosition messages.
 /**
@@ -116,6 +142,33 @@ learning_interface__msg__ObjectPosition__Sequence__create(size_t size);
 ROSIDL_GENERATOR_C_PUBLIC_learning_interface
 void
 learning_interface__msg__ObjectPosition__Sequence__destroy(learning_interface__msg__ObjectPosition__Sequence * array);
+
+/// Check for msg/ObjectPosition message array equality.
+/**
+ * \param[in] lhs The message array on the left hand size of the equality operator.
+ * \param[in] rhs The message array on the right hand size of the equality operator.
+ * \return true if message arrays are equal in size and content, otherwise false.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_learning_interface
+bool
+learning_interface__msg__ObjectPosition__Sequence__are_equal(const learning_interface__msg__ObjectPosition__Sequence * lhs, const learning_interface__msg__ObjectPosition__Sequence * rhs);
+
+/// Copy an array of msg/ObjectPosition messages.
+/**
+ * This functions performs a deep copy, as opposed to the shallow copy that
+ * plain assignment yields.
+ *
+ * \param[in] input The source array pointer.
+ * \param[out] output The target array pointer, which must
+ *   have been initialized before calling this function.
+ * \return true if successful, or false if either pointer
+ *   is null or memory allocation fails.
+ */
+ROSIDL_GENERATOR_C_PUBLIC_learning_interface
+bool
+learning_interface__msg__ObjectPosition__Sequence__copy(
+  const learning_interface__msg__ObjectPosition__Sequence * input,
+  learning_interface__msg__ObjectPosition__Sequence * output);
 
 #ifdef __cplusplus
 }

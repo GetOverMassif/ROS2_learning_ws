@@ -30,6 +30,32 @@ learning_interface__action__MoveCircle_Goal__fini(learning_interface__action__Mo
   // enable
 }
 
+bool
+learning_interface__action__MoveCircle_Goal__are_equal(const learning_interface__action__MoveCircle_Goal * lhs, const learning_interface__action__MoveCircle_Goal * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  // enable
+  if (lhs->enable != rhs->enable) {
+    return false;
+  }
+  return true;
+}
+
+bool
+learning_interface__action__MoveCircle_Goal__copy(
+  const learning_interface__action__MoveCircle_Goal * input,
+  learning_interface__action__MoveCircle_Goal * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  // enable
+  output->enable = input->enable;
+  return true;
+}
+
 learning_interface__action__MoveCircle_Goal *
 learning_interface__action__MoveCircle_Goal__create()
 {
@@ -147,6 +173,63 @@ learning_interface__action__MoveCircle_Goal__Sequence__destroy(learning_interfac
   allocator.deallocate(array, allocator.state);
 }
 
+bool
+learning_interface__action__MoveCircle_Goal__Sequence__are_equal(const learning_interface__action__MoveCircle_Goal__Sequence * lhs, const learning_interface__action__MoveCircle_Goal__Sequence * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  if (lhs->size != rhs->size) {
+    return false;
+  }
+  for (size_t i = 0; i < lhs->size; ++i) {
+    if (!learning_interface__action__MoveCircle_Goal__are_equal(&(lhs->data[i]), &(rhs->data[i]))) {
+      return false;
+    }
+  }
+  return true;
+}
+
+bool
+learning_interface__action__MoveCircle_Goal__Sequence__copy(
+  const learning_interface__action__MoveCircle_Goal__Sequence * input,
+  learning_interface__action__MoveCircle_Goal__Sequence * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  if (output->capacity < input->size) {
+    const size_t allocation_size =
+      input->size * sizeof(learning_interface__action__MoveCircle_Goal);
+    learning_interface__action__MoveCircle_Goal * data =
+      (learning_interface__action__MoveCircle_Goal *)realloc(output->data, allocation_size);
+    if (!data) {
+      return false;
+    }
+    for (size_t i = output->capacity; i < input->size; ++i) {
+      if (!learning_interface__action__MoveCircle_Goal__init(&data[i])) {
+        /* free currently allocated and return false */
+        for (; i-- > output->capacity; ) {
+          learning_interface__action__MoveCircle_Goal__fini(&data[i]);
+        }
+        free(data);
+        return false;
+      }
+    }
+    output->data = data;
+    output->capacity = input->size;
+  }
+  output->size = input->size;
+  for (size_t i = 0; i < input->size; ++i) {
+    if (!learning_interface__action__MoveCircle_Goal__copy(
+        &(input->data[i]), &(output->data[i])))
+    {
+      return false;
+    }
+  }
+  return true;
+}
+
 
 bool
 learning_interface__action__MoveCircle_Result__init(learning_interface__action__MoveCircle_Result * msg)
@@ -165,6 +248,32 @@ learning_interface__action__MoveCircle_Result__fini(learning_interface__action__
     return;
   }
   // finish
+}
+
+bool
+learning_interface__action__MoveCircle_Result__are_equal(const learning_interface__action__MoveCircle_Result * lhs, const learning_interface__action__MoveCircle_Result * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  // finish
+  if (lhs->finish != rhs->finish) {
+    return false;
+  }
+  return true;
+}
+
+bool
+learning_interface__action__MoveCircle_Result__copy(
+  const learning_interface__action__MoveCircle_Result * input,
+  learning_interface__action__MoveCircle_Result * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  // finish
+  output->finish = input->finish;
+  return true;
 }
 
 learning_interface__action__MoveCircle_Result *
@@ -284,6 +393,63 @@ learning_interface__action__MoveCircle_Result__Sequence__destroy(learning_interf
   allocator.deallocate(array, allocator.state);
 }
 
+bool
+learning_interface__action__MoveCircle_Result__Sequence__are_equal(const learning_interface__action__MoveCircle_Result__Sequence * lhs, const learning_interface__action__MoveCircle_Result__Sequence * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  if (lhs->size != rhs->size) {
+    return false;
+  }
+  for (size_t i = 0; i < lhs->size; ++i) {
+    if (!learning_interface__action__MoveCircle_Result__are_equal(&(lhs->data[i]), &(rhs->data[i]))) {
+      return false;
+    }
+  }
+  return true;
+}
+
+bool
+learning_interface__action__MoveCircle_Result__Sequence__copy(
+  const learning_interface__action__MoveCircle_Result__Sequence * input,
+  learning_interface__action__MoveCircle_Result__Sequence * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  if (output->capacity < input->size) {
+    const size_t allocation_size =
+      input->size * sizeof(learning_interface__action__MoveCircle_Result);
+    learning_interface__action__MoveCircle_Result * data =
+      (learning_interface__action__MoveCircle_Result *)realloc(output->data, allocation_size);
+    if (!data) {
+      return false;
+    }
+    for (size_t i = output->capacity; i < input->size; ++i) {
+      if (!learning_interface__action__MoveCircle_Result__init(&data[i])) {
+        /* free currently allocated and return false */
+        for (; i-- > output->capacity; ) {
+          learning_interface__action__MoveCircle_Result__fini(&data[i]);
+        }
+        free(data);
+        return false;
+      }
+    }
+    output->data = data;
+    output->capacity = input->size;
+  }
+  output->size = input->size;
+  for (size_t i = 0; i < input->size; ++i) {
+    if (!learning_interface__action__MoveCircle_Result__copy(
+        &(input->data[i]), &(output->data[i])))
+    {
+      return false;
+    }
+  }
+  return true;
+}
+
 
 bool
 learning_interface__action__MoveCircle_Feedback__init(learning_interface__action__MoveCircle_Feedback * msg)
@@ -302,6 +468,32 @@ learning_interface__action__MoveCircle_Feedback__fini(learning_interface__action
     return;
   }
   // state
+}
+
+bool
+learning_interface__action__MoveCircle_Feedback__are_equal(const learning_interface__action__MoveCircle_Feedback * lhs, const learning_interface__action__MoveCircle_Feedback * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  // state
+  if (lhs->state != rhs->state) {
+    return false;
+  }
+  return true;
+}
+
+bool
+learning_interface__action__MoveCircle_Feedback__copy(
+  const learning_interface__action__MoveCircle_Feedback * input,
+  learning_interface__action__MoveCircle_Feedback * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  // state
+  output->state = input->state;
+  return true;
 }
 
 learning_interface__action__MoveCircle_Feedback *
@@ -421,6 +613,63 @@ learning_interface__action__MoveCircle_Feedback__Sequence__destroy(learning_inte
   allocator.deallocate(array, allocator.state);
 }
 
+bool
+learning_interface__action__MoveCircle_Feedback__Sequence__are_equal(const learning_interface__action__MoveCircle_Feedback__Sequence * lhs, const learning_interface__action__MoveCircle_Feedback__Sequence * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  if (lhs->size != rhs->size) {
+    return false;
+  }
+  for (size_t i = 0; i < lhs->size; ++i) {
+    if (!learning_interface__action__MoveCircle_Feedback__are_equal(&(lhs->data[i]), &(rhs->data[i]))) {
+      return false;
+    }
+  }
+  return true;
+}
+
+bool
+learning_interface__action__MoveCircle_Feedback__Sequence__copy(
+  const learning_interface__action__MoveCircle_Feedback__Sequence * input,
+  learning_interface__action__MoveCircle_Feedback__Sequence * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  if (output->capacity < input->size) {
+    const size_t allocation_size =
+      input->size * sizeof(learning_interface__action__MoveCircle_Feedback);
+    learning_interface__action__MoveCircle_Feedback * data =
+      (learning_interface__action__MoveCircle_Feedback *)realloc(output->data, allocation_size);
+    if (!data) {
+      return false;
+    }
+    for (size_t i = output->capacity; i < input->size; ++i) {
+      if (!learning_interface__action__MoveCircle_Feedback__init(&data[i])) {
+        /* free currently allocated and return false */
+        for (; i-- > output->capacity; ) {
+          learning_interface__action__MoveCircle_Feedback__fini(&data[i]);
+        }
+        free(data);
+        return false;
+      }
+    }
+    output->data = data;
+    output->capacity = input->size;
+  }
+  output->size = input->size;
+  for (size_t i = 0; i < input->size; ++i) {
+    if (!learning_interface__action__MoveCircle_Feedback__copy(
+        &(input->data[i]), &(output->data[i])))
+    {
+      return false;
+    }
+  }
+  return true;
+}
+
 
 // Include directives for member types
 // Member `goal_id`
@@ -458,6 +707,50 @@ learning_interface__action__MoveCircle_SendGoal_Request__fini(learning_interface
   unique_identifier_msgs__msg__UUID__fini(&msg->goal_id);
   // goal
   learning_interface__action__MoveCircle_Goal__fini(&msg->goal);
+}
+
+bool
+learning_interface__action__MoveCircle_SendGoal_Request__are_equal(const learning_interface__action__MoveCircle_SendGoal_Request * lhs, const learning_interface__action__MoveCircle_SendGoal_Request * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  // goal_id
+  if (!unique_identifier_msgs__msg__UUID__are_equal(
+      &(lhs->goal_id), &(rhs->goal_id)))
+  {
+    return false;
+  }
+  // goal
+  if (!learning_interface__action__MoveCircle_Goal__are_equal(
+      &(lhs->goal), &(rhs->goal)))
+  {
+    return false;
+  }
+  return true;
+}
+
+bool
+learning_interface__action__MoveCircle_SendGoal_Request__copy(
+  const learning_interface__action__MoveCircle_SendGoal_Request * input,
+  learning_interface__action__MoveCircle_SendGoal_Request * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  // goal_id
+  if (!unique_identifier_msgs__msg__UUID__copy(
+      &(input->goal_id), &(output->goal_id)))
+  {
+    return false;
+  }
+  // goal
+  if (!learning_interface__action__MoveCircle_Goal__copy(
+      &(input->goal), &(output->goal)))
+  {
+    return false;
+  }
+  return true;
 }
 
 learning_interface__action__MoveCircle_SendGoal_Request *
@@ -577,6 +870,63 @@ learning_interface__action__MoveCircle_SendGoal_Request__Sequence__destroy(learn
   allocator.deallocate(array, allocator.state);
 }
 
+bool
+learning_interface__action__MoveCircle_SendGoal_Request__Sequence__are_equal(const learning_interface__action__MoveCircle_SendGoal_Request__Sequence * lhs, const learning_interface__action__MoveCircle_SendGoal_Request__Sequence * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  if (lhs->size != rhs->size) {
+    return false;
+  }
+  for (size_t i = 0; i < lhs->size; ++i) {
+    if (!learning_interface__action__MoveCircle_SendGoal_Request__are_equal(&(lhs->data[i]), &(rhs->data[i]))) {
+      return false;
+    }
+  }
+  return true;
+}
+
+bool
+learning_interface__action__MoveCircle_SendGoal_Request__Sequence__copy(
+  const learning_interface__action__MoveCircle_SendGoal_Request__Sequence * input,
+  learning_interface__action__MoveCircle_SendGoal_Request__Sequence * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  if (output->capacity < input->size) {
+    const size_t allocation_size =
+      input->size * sizeof(learning_interface__action__MoveCircle_SendGoal_Request);
+    learning_interface__action__MoveCircle_SendGoal_Request * data =
+      (learning_interface__action__MoveCircle_SendGoal_Request *)realloc(output->data, allocation_size);
+    if (!data) {
+      return false;
+    }
+    for (size_t i = output->capacity; i < input->size; ++i) {
+      if (!learning_interface__action__MoveCircle_SendGoal_Request__init(&data[i])) {
+        /* free currently allocated and return false */
+        for (; i-- > output->capacity; ) {
+          learning_interface__action__MoveCircle_SendGoal_Request__fini(&data[i]);
+        }
+        free(data);
+        return false;
+      }
+    }
+    output->data = data;
+    output->capacity = input->size;
+  }
+  output->size = input->size;
+  for (size_t i = 0; i < input->size; ++i) {
+    if (!learning_interface__action__MoveCircle_SendGoal_Request__copy(
+        &(input->data[i]), &(output->data[i])))
+    {
+      return false;
+    }
+  }
+  return true;
+}
+
 
 // Include directives for member types
 // Member `stamp`
@@ -606,6 +956,44 @@ learning_interface__action__MoveCircle_SendGoal_Response__fini(learning_interfac
   // accepted
   // stamp
   builtin_interfaces__msg__Time__fini(&msg->stamp);
+}
+
+bool
+learning_interface__action__MoveCircle_SendGoal_Response__are_equal(const learning_interface__action__MoveCircle_SendGoal_Response * lhs, const learning_interface__action__MoveCircle_SendGoal_Response * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  // accepted
+  if (lhs->accepted != rhs->accepted) {
+    return false;
+  }
+  // stamp
+  if (!builtin_interfaces__msg__Time__are_equal(
+      &(lhs->stamp), &(rhs->stamp)))
+  {
+    return false;
+  }
+  return true;
+}
+
+bool
+learning_interface__action__MoveCircle_SendGoal_Response__copy(
+  const learning_interface__action__MoveCircle_SendGoal_Response * input,
+  learning_interface__action__MoveCircle_SendGoal_Response * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  // accepted
+  output->accepted = input->accepted;
+  // stamp
+  if (!builtin_interfaces__msg__Time__copy(
+      &(input->stamp), &(output->stamp)))
+  {
+    return false;
+  }
+  return true;
 }
 
 learning_interface__action__MoveCircle_SendGoal_Response *
@@ -725,6 +1113,63 @@ learning_interface__action__MoveCircle_SendGoal_Response__Sequence__destroy(lear
   allocator.deallocate(array, allocator.state);
 }
 
+bool
+learning_interface__action__MoveCircle_SendGoal_Response__Sequence__are_equal(const learning_interface__action__MoveCircle_SendGoal_Response__Sequence * lhs, const learning_interface__action__MoveCircle_SendGoal_Response__Sequence * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  if (lhs->size != rhs->size) {
+    return false;
+  }
+  for (size_t i = 0; i < lhs->size; ++i) {
+    if (!learning_interface__action__MoveCircle_SendGoal_Response__are_equal(&(lhs->data[i]), &(rhs->data[i]))) {
+      return false;
+    }
+  }
+  return true;
+}
+
+bool
+learning_interface__action__MoveCircle_SendGoal_Response__Sequence__copy(
+  const learning_interface__action__MoveCircle_SendGoal_Response__Sequence * input,
+  learning_interface__action__MoveCircle_SendGoal_Response__Sequence * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  if (output->capacity < input->size) {
+    const size_t allocation_size =
+      input->size * sizeof(learning_interface__action__MoveCircle_SendGoal_Response);
+    learning_interface__action__MoveCircle_SendGoal_Response * data =
+      (learning_interface__action__MoveCircle_SendGoal_Response *)realloc(output->data, allocation_size);
+    if (!data) {
+      return false;
+    }
+    for (size_t i = output->capacity; i < input->size; ++i) {
+      if (!learning_interface__action__MoveCircle_SendGoal_Response__init(&data[i])) {
+        /* free currently allocated and return false */
+        for (; i-- > output->capacity; ) {
+          learning_interface__action__MoveCircle_SendGoal_Response__fini(&data[i]);
+        }
+        free(data);
+        return false;
+      }
+    }
+    output->data = data;
+    output->capacity = input->size;
+  }
+  output->size = input->size;
+  for (size_t i = 0; i < input->size; ++i) {
+    if (!learning_interface__action__MoveCircle_SendGoal_Response__copy(
+        &(input->data[i]), &(output->data[i])))
+    {
+      return false;
+    }
+  }
+  return true;
+}
+
 
 // Include directives for member types
 // Member `goal_id`
@@ -753,6 +1198,38 @@ learning_interface__action__MoveCircle_GetResult_Request__fini(learning_interfac
   }
   // goal_id
   unique_identifier_msgs__msg__UUID__fini(&msg->goal_id);
+}
+
+bool
+learning_interface__action__MoveCircle_GetResult_Request__are_equal(const learning_interface__action__MoveCircle_GetResult_Request * lhs, const learning_interface__action__MoveCircle_GetResult_Request * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  // goal_id
+  if (!unique_identifier_msgs__msg__UUID__are_equal(
+      &(lhs->goal_id), &(rhs->goal_id)))
+  {
+    return false;
+  }
+  return true;
+}
+
+bool
+learning_interface__action__MoveCircle_GetResult_Request__copy(
+  const learning_interface__action__MoveCircle_GetResult_Request * input,
+  learning_interface__action__MoveCircle_GetResult_Request * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  // goal_id
+  if (!unique_identifier_msgs__msg__UUID__copy(
+      &(input->goal_id), &(output->goal_id)))
+  {
+    return false;
+  }
+  return true;
 }
 
 learning_interface__action__MoveCircle_GetResult_Request *
@@ -872,6 +1349,63 @@ learning_interface__action__MoveCircle_GetResult_Request__Sequence__destroy(lear
   allocator.deallocate(array, allocator.state);
 }
 
+bool
+learning_interface__action__MoveCircle_GetResult_Request__Sequence__are_equal(const learning_interface__action__MoveCircle_GetResult_Request__Sequence * lhs, const learning_interface__action__MoveCircle_GetResult_Request__Sequence * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  if (lhs->size != rhs->size) {
+    return false;
+  }
+  for (size_t i = 0; i < lhs->size; ++i) {
+    if (!learning_interface__action__MoveCircle_GetResult_Request__are_equal(&(lhs->data[i]), &(rhs->data[i]))) {
+      return false;
+    }
+  }
+  return true;
+}
+
+bool
+learning_interface__action__MoveCircle_GetResult_Request__Sequence__copy(
+  const learning_interface__action__MoveCircle_GetResult_Request__Sequence * input,
+  learning_interface__action__MoveCircle_GetResult_Request__Sequence * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  if (output->capacity < input->size) {
+    const size_t allocation_size =
+      input->size * sizeof(learning_interface__action__MoveCircle_GetResult_Request);
+    learning_interface__action__MoveCircle_GetResult_Request * data =
+      (learning_interface__action__MoveCircle_GetResult_Request *)realloc(output->data, allocation_size);
+    if (!data) {
+      return false;
+    }
+    for (size_t i = output->capacity; i < input->size; ++i) {
+      if (!learning_interface__action__MoveCircle_GetResult_Request__init(&data[i])) {
+        /* free currently allocated and return false */
+        for (; i-- > output->capacity; ) {
+          learning_interface__action__MoveCircle_GetResult_Request__fini(&data[i]);
+        }
+        free(data);
+        return false;
+      }
+    }
+    output->data = data;
+    output->capacity = input->size;
+  }
+  output->size = input->size;
+  for (size_t i = 0; i < input->size; ++i) {
+    if (!learning_interface__action__MoveCircle_GetResult_Request__copy(
+        &(input->data[i]), &(output->data[i])))
+    {
+      return false;
+    }
+  }
+  return true;
+}
+
 
 // Include directives for member types
 // Member `result`
@@ -902,6 +1436,44 @@ learning_interface__action__MoveCircle_GetResult_Response__fini(learning_interfa
   // status
   // result
   learning_interface__action__MoveCircle_Result__fini(&msg->result);
+}
+
+bool
+learning_interface__action__MoveCircle_GetResult_Response__are_equal(const learning_interface__action__MoveCircle_GetResult_Response * lhs, const learning_interface__action__MoveCircle_GetResult_Response * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  // status
+  if (lhs->status != rhs->status) {
+    return false;
+  }
+  // result
+  if (!learning_interface__action__MoveCircle_Result__are_equal(
+      &(lhs->result), &(rhs->result)))
+  {
+    return false;
+  }
+  return true;
+}
+
+bool
+learning_interface__action__MoveCircle_GetResult_Response__copy(
+  const learning_interface__action__MoveCircle_GetResult_Response * input,
+  learning_interface__action__MoveCircle_GetResult_Response * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  // status
+  output->status = input->status;
+  // result
+  if (!learning_interface__action__MoveCircle_Result__copy(
+      &(input->result), &(output->result)))
+  {
+    return false;
+  }
+  return true;
 }
 
 learning_interface__action__MoveCircle_GetResult_Response *
@@ -1021,6 +1593,63 @@ learning_interface__action__MoveCircle_GetResult_Response__Sequence__destroy(lea
   allocator.deallocate(array, allocator.state);
 }
 
+bool
+learning_interface__action__MoveCircle_GetResult_Response__Sequence__are_equal(const learning_interface__action__MoveCircle_GetResult_Response__Sequence * lhs, const learning_interface__action__MoveCircle_GetResult_Response__Sequence * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  if (lhs->size != rhs->size) {
+    return false;
+  }
+  for (size_t i = 0; i < lhs->size; ++i) {
+    if (!learning_interface__action__MoveCircle_GetResult_Response__are_equal(&(lhs->data[i]), &(rhs->data[i]))) {
+      return false;
+    }
+  }
+  return true;
+}
+
+bool
+learning_interface__action__MoveCircle_GetResult_Response__Sequence__copy(
+  const learning_interface__action__MoveCircle_GetResult_Response__Sequence * input,
+  learning_interface__action__MoveCircle_GetResult_Response__Sequence * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  if (output->capacity < input->size) {
+    const size_t allocation_size =
+      input->size * sizeof(learning_interface__action__MoveCircle_GetResult_Response);
+    learning_interface__action__MoveCircle_GetResult_Response * data =
+      (learning_interface__action__MoveCircle_GetResult_Response *)realloc(output->data, allocation_size);
+    if (!data) {
+      return false;
+    }
+    for (size_t i = output->capacity; i < input->size; ++i) {
+      if (!learning_interface__action__MoveCircle_GetResult_Response__init(&data[i])) {
+        /* free currently allocated and return false */
+        for (; i-- > output->capacity; ) {
+          learning_interface__action__MoveCircle_GetResult_Response__fini(&data[i]);
+        }
+        free(data);
+        return false;
+      }
+    }
+    output->data = data;
+    output->capacity = input->size;
+  }
+  output->size = input->size;
+  for (size_t i = 0; i < input->size; ++i) {
+    if (!learning_interface__action__MoveCircle_GetResult_Response__copy(
+        &(input->data[i]), &(output->data[i])))
+    {
+      return false;
+    }
+  }
+  return true;
+}
+
 
 // Include directives for member types
 // Member `goal_id`
@@ -1059,6 +1688,50 @@ learning_interface__action__MoveCircle_FeedbackMessage__fini(learning_interface_
   unique_identifier_msgs__msg__UUID__fini(&msg->goal_id);
   // feedback
   learning_interface__action__MoveCircle_Feedback__fini(&msg->feedback);
+}
+
+bool
+learning_interface__action__MoveCircle_FeedbackMessage__are_equal(const learning_interface__action__MoveCircle_FeedbackMessage * lhs, const learning_interface__action__MoveCircle_FeedbackMessage * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  // goal_id
+  if (!unique_identifier_msgs__msg__UUID__are_equal(
+      &(lhs->goal_id), &(rhs->goal_id)))
+  {
+    return false;
+  }
+  // feedback
+  if (!learning_interface__action__MoveCircle_Feedback__are_equal(
+      &(lhs->feedback), &(rhs->feedback)))
+  {
+    return false;
+  }
+  return true;
+}
+
+bool
+learning_interface__action__MoveCircle_FeedbackMessage__copy(
+  const learning_interface__action__MoveCircle_FeedbackMessage * input,
+  learning_interface__action__MoveCircle_FeedbackMessage * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  // goal_id
+  if (!unique_identifier_msgs__msg__UUID__copy(
+      &(input->goal_id), &(output->goal_id)))
+  {
+    return false;
+  }
+  // feedback
+  if (!learning_interface__action__MoveCircle_Feedback__copy(
+      &(input->feedback), &(output->feedback)))
+  {
+    return false;
+  }
+  return true;
 }
 
 learning_interface__action__MoveCircle_FeedbackMessage *
@@ -1176,4 +1849,61 @@ learning_interface__action__MoveCircle_FeedbackMessage__Sequence__destroy(learni
     learning_interface__action__MoveCircle_FeedbackMessage__Sequence__fini(array);
   }
   allocator.deallocate(array, allocator.state);
+}
+
+bool
+learning_interface__action__MoveCircle_FeedbackMessage__Sequence__are_equal(const learning_interface__action__MoveCircle_FeedbackMessage__Sequence * lhs, const learning_interface__action__MoveCircle_FeedbackMessage__Sequence * rhs)
+{
+  if (!lhs || !rhs) {
+    return false;
+  }
+  if (lhs->size != rhs->size) {
+    return false;
+  }
+  for (size_t i = 0; i < lhs->size; ++i) {
+    if (!learning_interface__action__MoveCircle_FeedbackMessage__are_equal(&(lhs->data[i]), &(rhs->data[i]))) {
+      return false;
+    }
+  }
+  return true;
+}
+
+bool
+learning_interface__action__MoveCircle_FeedbackMessage__Sequence__copy(
+  const learning_interface__action__MoveCircle_FeedbackMessage__Sequence * input,
+  learning_interface__action__MoveCircle_FeedbackMessage__Sequence * output)
+{
+  if (!input || !output) {
+    return false;
+  }
+  if (output->capacity < input->size) {
+    const size_t allocation_size =
+      input->size * sizeof(learning_interface__action__MoveCircle_FeedbackMessage);
+    learning_interface__action__MoveCircle_FeedbackMessage * data =
+      (learning_interface__action__MoveCircle_FeedbackMessage *)realloc(output->data, allocation_size);
+    if (!data) {
+      return false;
+    }
+    for (size_t i = output->capacity; i < input->size; ++i) {
+      if (!learning_interface__action__MoveCircle_FeedbackMessage__init(&data[i])) {
+        /* free currently allocated and return false */
+        for (; i-- > output->capacity; ) {
+          learning_interface__action__MoveCircle_FeedbackMessage__fini(&data[i]);
+        }
+        free(data);
+        return false;
+      }
+    }
+    output->data = data;
+    output->capacity = input->size;
+  }
+  output->size = input->size;
+  for (size_t i = 0; i < input->size; ++i) {
+    if (!learning_interface__action__MoveCircle_FeedbackMessage__copy(
+        &(input->data[i]), &(output->data[i])))
+    {
+      return false;
+    }
+  }
+  return true;
 }

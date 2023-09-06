@@ -1,0 +1,45 @@
+[1.762s] Invoking command in '/home/nio/Documents/ROS2_learning_ws/src/ros2_21_tutorials/learning_launch': CONDA_PROMPT_MODIFIER=(py38) PYTHONPATH=/home/nio/Documents/ROS2_learning_ws/build/learning_launch/prefix_override:/home/nio/Documents/ROS2_learning_ws/install/learning_launch/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/learning_launch build --build-base /home/nio/Documents/ROS2_learning_ws/build/learning_launch/build install --record /home/nio/Documents/ROS2_learning_ws/build/learning_launch/install.log --single-version-externally-managed
+[1.948s] running egg_info
+[1.948s] creating ../../../build/learning_launch/learning_launch.egg-info
+[1.948s] writing ../../../build/learning_launch/learning_launch.egg-info/PKG-INFO
+[1.949s] writing dependency_links to ../../../build/learning_launch/learning_launch.egg-info/dependency_links.txt
+[1.949s] writing entry points to ../../../build/learning_launch/learning_launch.egg-info/entry_points.txt
+[1.949s] writing requirements to ../../../build/learning_launch/learning_launch.egg-info/requires.txt
+[1.949s] writing top-level names to ../../../build/learning_launch/learning_launch.egg-info/top_level.txt
+[1.950s] writing manifest file '../../../build/learning_launch/learning_launch.egg-info/SOURCES.txt'
+[1.979s] reading manifest file '../../../build/learning_launch/learning_launch.egg-info/SOURCES.txt'
+[1.979s] writing manifest file '../../../build/learning_launch/learning_launch.egg-info/SOURCES.txt'
+[1.980s] running build
+[1.980s] running build_py
+[1.980s] creating /home/nio/Documents/ROS2_learning_ws/build/learning_launch/build
+[1.980s] creating /home/nio/Documents/ROS2_learning_ws/build/learning_launch/build/lib
+[1.980s] creating /home/nio/Documents/ROS2_learning_ws/build/learning_launch/build/lib/learning_launch
+[1.980s] copying learning_launch/__init__.py -> /home/nio/Documents/ROS2_learning_ws/build/learning_launch/build/lib/learning_launch
+[1.980s] running install
+[1.981s] running install_lib
+[1.981s] creating /home/nio/Documents/ROS2_learning_ws/install/learning_launch/lib/python3.8/site-packages/learning_launch
+[1.982s] copying /home/nio/Documents/ROS2_learning_ws/build/learning_launch/build/lib/learning_launch/__init__.py -> /home/nio/Documents/ROS2_learning_ws/install/learning_launch/lib/python3.8/site-packages/learning_launch
+[1.982s] byte-compiling /home/nio/Documents/ROS2_learning_ws/install/learning_launch/lib/python3.8/site-packages/learning_launch/__init__.py to __init__.cpython-38.pyc
+[1.983s] running install_data
+[1.984s] creating /home/nio/Documents/ROS2_learning_ws/install/learning_launch/share/ament_index
+[1.984s] creating /home/nio/Documents/ROS2_learning_ws/install/learning_launch/share/ament_index/resource_index
+[1.984s] creating /home/nio/Documents/ROS2_learning_ws/install/learning_launch/share/ament_index/resource_index/packages
+[1.984s] copying resource/learning_launch -> /home/nio/Documents/ROS2_learning_ws/install/learning_launch/share/ament_index/resource_index/packages
+[1.984s] copying package.xml -> /home/nio/Documents/ROS2_learning_ws/install/learning_launch/share/learning_launch
+[1.985s] creating /home/nio/Documents/ROS2_learning_ws/install/learning_launch/share/learning_launch/launch
+[1.985s] copying launch/parameters.launch.py -> /home/nio/Documents/ROS2_learning_ws/install/learning_launch/share/learning_launch/launch
+[1.985s] copying launch/parameters_yaml.launch.py -> /home/nio/Documents/ROS2_learning_ws/install/learning_launch/share/learning_launch/launch
+[1.985s] copying launch/namespaces.launch.py -> /home/nio/Documents/ROS2_learning_ws/install/learning_launch/share/learning_launch/launch
+[1.985s] copying launch/parameters_nonamespace.launch.py -> /home/nio/Documents/ROS2_learning_ws/install/learning_launch/share/learning_launch/launch
+[1.985s] copying launch/rviz.launch.py -> /home/nio/Documents/ROS2_learning_ws/install/learning_launch/share/learning_launch/launch
+[1.985s] copying launch/simple.launch.py -> /home/nio/Documents/ROS2_learning_ws/install/learning_launch/share/learning_launch/launch
+[1.985s] copying launch/remapping.launch.py -> /home/nio/Documents/ROS2_learning_ws/install/learning_launch/share/learning_launch/launch
+[1.985s] creating /home/nio/Documents/ROS2_learning_ws/install/learning_launch/share/learning_launch/config
+[1.985s] copying config/turtlesim.yaml -> /home/nio/Documents/ROS2_learning_ws/install/learning_launch/share/learning_launch/config
+[1.986s] creating /home/nio/Documents/ROS2_learning_ws/install/learning_launch/share/learning_launch/rviz
+[1.986s] copying rviz/turtle_rviz.rviz -> /home/nio/Documents/ROS2_learning_ws/install/learning_launch/share/learning_launch/rviz
+[1.986s] running install_egg_info
+[1.987s] Copying ../../../build/learning_launch/learning_launch.egg-info to /home/nio/Documents/ROS2_learning_ws/install/learning_launch/lib/python3.8/site-packages/learning_launch-0.0.0-py3.8.egg-info
+[1.988s] running install_scripts
+[2.004s] writing list of installed files to '/home/nio/Documents/ROS2_learning_ws/build/learning_launch/install.log'
+[2.023s] Invoked command in '/home/nio/Documents/ROS2_learning_ws/src/ros2_21_tutorials/learning_launch' returned '0': CONDA_PROMPT_MODIFIER=(py38) PYTHONPATH=/home/nio/Documents/ROS2_learning_ws/build/learning_launch/prefix_override:/home/nio/Documents/ROS2_learning_ws/install/learning_launch/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/learning_launch build --build-base /home/nio/Documents/ROS2_learning_ws/build/learning_launch/build install --record /home/nio/Documents/ROS2_learning_ws/build/learning_launch/install.log --single-version-externally-managed

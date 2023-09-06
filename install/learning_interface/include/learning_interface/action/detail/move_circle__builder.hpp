@@ -5,11 +5,10 @@
 #ifndef LEARNING_INTERFACE__ACTION__DETAIL__MOVE_CIRCLE__BUILDER_HPP_
 #define LEARNING_INTERFACE__ACTION__DETAIL__MOVE_CIRCLE__BUILDER_HPP_
 
+#include "learning_interface/action/detail/move_circle__struct.hpp"
+#include <rosidl_runtime_cpp/message_initialization.hpp>
 #include <algorithm>
 #include <utility>
-
-#include "learning_interface/action/detail/move_circle__struct.hpp"
-#include "rosidl_runtime_cpp/message_initialization.hpp"
 
 
 namespace learning_interface
