@@ -1,2 +1,1 @@
-
-int64 sum      # 求和结果
+/home/lj/Documents/ROS2_learning_ws/build/learning_interface/rosidl_cmake/srv/AddTwoInts_Response.msg

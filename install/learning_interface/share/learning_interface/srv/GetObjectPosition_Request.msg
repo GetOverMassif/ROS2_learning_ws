@@ -1,1 +1,1 @@
-bool get      # 获取目标位置的指令
+/home/lj/Documents/ROS2_learning_ws/build/learning_interface/rosidl_cmake/srv/GetObjectPosition_Request.msg

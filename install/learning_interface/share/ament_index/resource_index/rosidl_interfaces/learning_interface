@@ -1,12 +1,1 @@
-action/MoveCircle.action
-action/MoveCircle.idl
-msg/ObjectPosition.idl
-msg/ObjectPosition.msg
-srv/AddTwoInts.idl
-srv/AddTwoInts.srv
-srv/AddTwoInts_Request.msg
-srv/AddTwoInts_Response.msg
-srv/GetObjectPosition.idl
-srv/GetObjectPosition.srv
-srv/GetObjectPosition_Request.msg
-srv/GetObjectPosition_Response.msg
+/home/lj/Documents/ROS2_learning_ws/build/learning_interface/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/learning_interface

@@ -38,7 +38,7 @@ def main(args=None):                                                            
     node = Node("node_object")                                                     # 创建ROS2节点对象并进行初始化
     node.get_logger().info("ROS2节点示例：检测图片中的苹果")
 
-    image = cv2.imread('/home/hcx/dev_ws/src/ros2_21_tutorials/learning_node/learning_node/apple.jpg')  # 读取图像
+    image = cv2.imread('/home/lj/Documents/ROS2_learning_ws/src/ros2_21_tutorials/learning_node/learning_node/apple.jpg')  # 读取图像
     object_detect(image)                                                            # 苹果检测
     rclpy.spin(node)                                                               # 循环等待ROS2退出
     node.destroy_node()                                                            # 销毁节点对象

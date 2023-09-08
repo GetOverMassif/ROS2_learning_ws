@@ -1,2 +1,1 @@
-int32 x      # 表示目标的X坐标
-int32 y      # 表示目标的Y坐标
+/home/lj/Documents/ROS2_learning_ws/src/ros2_21_tutorials/learning_interface/msg/ObjectPosition.msg

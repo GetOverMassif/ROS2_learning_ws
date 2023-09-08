@@ -4,3 +4,6 @@ source;share/learning_parameter/hook/pythonpath.sh
 source;share/learning_parameter/hook/ament_prefix_path.ps1
 source;share/learning_parameter/hook/ament_prefix_path.dsv
 source;share/learning_parameter/hook/ament_prefix_path.sh
+source;../../build/learning_parameter/share/learning_parameter/hook/pythonpath_develop.ps1
+source;../../build/learning_parameter/share/learning_parameter/hook/pythonpath_develop.dsv
+source;../../build/learning_parameter/share/learning_parameter/hook/pythonpath_develop.sh

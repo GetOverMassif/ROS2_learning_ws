@@ -1,1 +1,1 @@
-prepend-non-duplicate;PYTHONPATH;lib/python3.8/site-packages
+/home/lj/Documents/ROS2_learning_ws/build/learning_interface/ament_cmake_environment_hooks/pythonpath.dsv

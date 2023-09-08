@@ -1,3 +1,1 @@
-
-int32 x       # 目标的X坐标
-int32 y       # 目标的Y坐标
+/home/lj/Documents/ROS2_learning_ws/build/learning_interface/rosidl_cmake/srv/GetObjectPosition_Response.msg
